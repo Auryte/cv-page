@@ -19,7 +19,6 @@ export type Dictionary = {
     error: string;
     messageErrorMessage: string;
     messagetInputLabel: string;
-    nameErrorMessage: string;
     nameErrorMessageAlph: string;
     nameErrorMessageMax: string;
     nameErrorMessageMin: string;
