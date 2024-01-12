@@ -19,7 +19,10 @@ export const styles = {
     'paddingLeft': '24px',
     '&:after': {
       width: '120%',
-      left: { md: '64px', xs: 0 },
+      left: {
+        md: '64px',
+        xs: 0,
+      },
     },
   },
   'headingThree': {
@@ -39,7 +42,10 @@ export const styles = {
     },
   },
   'imageWrapper': {
-    height: { xs: '50vh', md: 'calc(100vh - 104px)' },
+    height: {
+      xs: '50vh',
+      md: 'calc(100vh - 104px)',
+    },
     backgroundColor: 'inherit',
   },
 };
@@ -49,7 +55,7 @@ export const image = (theme: string) => ({
   'filter': theme === 'dark' ? 'contrast(5)' : 'contrast(1)',
   'marginLeft': { xs: 0 },
   'animation': { md: 'mover 2s forwards' },
-  'animationFillMode': 'forwards',
+  'animation-fill-mode': 'forwards',
   '@keyframes mover': {
     '0%': {
       transform: 'translateX(0px)',

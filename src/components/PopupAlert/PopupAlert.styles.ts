@@ -7,7 +7,10 @@ export const styles = {
     paddingY: '56px',
   },
   dialogContent: {
-    maxWidth: { md: '50%', xs: '80%' },
+    maxWidth: {
+      md: '50%',
+      xs: '80%',
+    },
     textAlign: 'center',
   },
 };

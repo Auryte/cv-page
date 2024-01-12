@@ -2,7 +2,8 @@ import { AboutContent } from '@/app/[lang]/about/components/AboutContent/AboutCo
 import { getDictionary, LANGUAGE } from '@/lib/i18n';
 
 export const metadata = {
-  description: 'Aureja Slance | About',
+  description:
+    'Aureja Slance - Dedicated and proactive software developer with a strong foundation in frontend technologies and agile methodologies',
   title: 'Aureja Slance | About',
 };
 

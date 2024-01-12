@@ -2,17 +2,16 @@
 
 import Link from 'next/link';
 
-import { Grid } from '@/uiKit/Grid/Grid';
-import { Typography } from '@/uiKit/Typography/Typography';
-import { Icon } from '@/uiKit/Icon/Icon';
-
 import { Article } from '@/components/Article/Article';
-import { ContactForm } from '../ContactForm/ContactForm';
-import { useContactPageStore } from '../../hooks/useContactPageStore';
 import { linkGit, linkLinkedin } from '@/constants';
+import { Grid } from '@/uiKit/Grid/Grid';
+import { Icon } from '@/uiKit/Icon/Icon';
+import { Typography } from '@/uiKit/Typography/Typography';
 
-import { ContactFormContainerComponent } from '../../types/ContactPage.types';
 import { styles } from './ContactFormContainer.styles';
+import { useContactPageStore } from '../../hooks/useContactPageStore';
+import { ContactFormContainerComponent } from '../../types/ContactPage.types';
+import { ContactForm } from '../ContactForm/ContactForm';
 
 export const ContactFormContainer: ContactFormContainerComponent = (props) => {
   const { dictionary, lang } = props;
@@ -21,10 +20,6 @@ export const ContactFormContainer: ContactFormContainerComponent = (props) => {
     email,
     emailError,
     error,
-    isEmailError,
-    isMessageError,
-    isNameError,
-    isSubjectError,
     isSubmitDisabled,
     message,
     messageError,
@@ -81,7 +76,7 @@ export const ContactFormContainer: ContactFormContainerComponent = (props) => {
             <Icon
               name='linkedin'
               fontSize='large'
-              sx={styles.icon}
+              sx={styles.iconLinkedin}
             />
           </Link>
         </Grid>
@@ -91,10 +86,6 @@ export const ContactFormContainer: ContactFormContainerComponent = (props) => {
         email={email}
         emailError={emailError}
         error={error}
-        isEmailError={isEmailError}
-        isMessageError={isMessageError}
-        isNameError={isNameError}
-        isSubjectError={isSubjectError}
         isSubmitDisabled={isSubmitDisabled}
         message={message}
         messageError={messageError}

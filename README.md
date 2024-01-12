@@ -24,6 +24,10 @@ npx dev -p <PORT>
 
 Open [http://localhost:\<PORT\>](http://localhost:3000) (3000 is default) with browser.
 
+## Deployment
+
+The project is deployed and accessible online. You can visit the live application [here][https://aureja-slance-pi.vercel.app]
+
 ## Official documentation
 
 - [Next.js Documentation](https://nextjs.org/docs)

@@ -1,14 +1,16 @@
 import '@/styles/globals.css';
 
-import { RootLayoutComponentTypes } from '../layout';
+import { defaultPageUrl, pageUrlOptions } from '@/components/Header/config/headerOptions.config';
 import { Header } from '@/components/Header/Header';
 import { getDictionary } from '@/lib/i18n';
-import { defaultPageUrl, pageUrlOptions } from '@/components/Header/config/headerOptions.config';
+
+import { RootLayoutComponentTypes } from '../layout';
 
 const LocaleLayout: RootLayoutComponentTypes = async (props) => {
   const { children, params } = props;
   const { lang } = params;
   const { headerMenu } = await getDictionary(lang);
+
   return (
     <>
       <Header

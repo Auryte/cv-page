@@ -1,14 +1,11 @@
-import { Dictionary, LANGUAGE } from '@/lib/i18n';
 import { Dispatch, FC } from 'react';
+
+import { Dictionary, LANGUAGE } from '@/lib/i18n';
 
 export type ContactFormState = {
   email: string;
   emailError: string;
   error: string;
-  isEmailError: boolean;
-  isMessageError: boolean;
-  isNameError: boolean;
-  isSubjectError: boolean;
   isSubmitDisabled: boolean;
   message: string;
   messageError: string;
@@ -18,6 +15,7 @@ export type ContactFormState = {
   subjectError: string;
   success: boolean;
 };
+
 export type ContactFormSetStateTypes = Dispatch<Partial<ContactFormState>>;
 
 export type ContactFormReducerTypes = (
@@ -35,15 +33,11 @@ export type UseContactPageStoreType = (
   handleClose: () => void;
 };
 
-export interface ContactFormProps {
+export type ContactFormProps = {
   dictionary: Dictionary['contact'];
   email: string;
   emailError: string;
   error: string;
-  isEmailError: boolean;
-  isMessageError: boolean;
-  isNameError: boolean;
-  isSubjectError: boolean;
   isSubmitDisabled: boolean;
   message: string;
   messageError: string;
@@ -55,12 +49,13 @@ export interface ContactFormProps {
   subjectError: string;
   submit: () => void;
   success: boolean;
-}
+};
+
 export type ContactFormComponent = FC<ContactFormProps>;
 
-interface ContactFormContainerProps {
+type ContactFormContainerProps = {
   dictionary: Dictionary['contact'];
   lang: LANGUAGE;
-}
+};
 
 export type ContactFormContainerComponent = FC<ContactFormContainerProps>;

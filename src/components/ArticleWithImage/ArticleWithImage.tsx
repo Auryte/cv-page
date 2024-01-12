@@ -1,14 +1,17 @@
-import { Button } from '@/uiKit/Button/Button';
-import { Grid } from '@/uiKit/Grid/Grid';
 import { List, ListItem } from '@mui/material';
 import Link from 'next/link';
-import { styles } from './ArticleWithImage.styles';
+
 import { Box } from '@/uiKit/Box/Box';
+import { Button } from '@/uiKit/Button/Button';
+import { Grid } from '@/uiKit/Grid/Grid';
 import { Typography } from '@/uiKit/Typography/Typography';
+
+import { styles } from './ArticleWithImage.styles';
 import { ArticleWithImageComponent } from './ArticleWithImage.types';
 
 export const ArticleWithImage: ArticleWithImageComponent = (props) => {
   const { chapters, dictionary, image, link, sxArticleWrapper, sxImage, sxBlock, sxTypo } = props;
+
   return (
     <>
       <Grid
@@ -18,7 +21,10 @@ export const ArticleWithImage: ArticleWithImageComponent = (props) => {
         <Box
           component='img'
           src={image}
-          sx={{ ...styles.image, ...sxImage }}
+          sx={{
+            ...styles.image,
+            ...sxImage,
+          }}
         />
       </Grid>
       <Grid
@@ -26,7 +32,10 @@ export const ArticleWithImage: ArticleWithImageComponent = (props) => {
         item
         direction='column'
         md={4}
-        sx={{ ...styles.articleWrapper, ...sxArticleWrapper }}
+        sx={{
+          ...styles.articleWrapper,
+          ...sxArticleWrapper,
+        }}
       >
         <List>
           {chapters.map((chapter: string, index: number) => (
@@ -36,7 +45,10 @@ export const ArticleWithImage: ArticleWithImageComponent = (props) => {
             >
               <Typography
                 variant='body2'
-                sx={{ ...styles.article, ...sxTypo }}
+                sx={{
+                  ...styles.article,
+                  ...sxTypo,
+                }}
               >
                 {chapter}
               </Typography>
@@ -65,7 +77,12 @@ export const ArticleWithImage: ArticleWithImageComponent = (props) => {
             </Button>
           </Link>
         </Grid>
-        <Box sx={{ ...styles.colorBlock, ...sxBlock }} />
+        <Box
+          sx={{
+            ...styles.colorBlock,
+            ...sxBlock,
+          }}
+        />
       </Grid>
     </>
   );

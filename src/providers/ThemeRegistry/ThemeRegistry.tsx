@@ -1,7 +1,7 @@
 'use client';
 
-import dynamic from 'next/dynamic';
 import CssBaseline from '@mui/material/CssBaseline';
+import dynamic from 'next/dynamic';
 
 import NextAppDirEmotionCacheProvider from './EmotionCache';
 const CustomThemeProvider = dynamic(() => import('../CustomThemeProvider'), {

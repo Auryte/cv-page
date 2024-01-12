@@ -1,4 +1,5 @@
 import { createTheme, Theme } from '@mui/material/styles';
+
 import '@mui/material/styles/createPalette';
 import { roboto } from '@/app/fonts';
 
@@ -60,4 +61,5 @@ const theme: Theme = createTheme({
     fontFamily: roboto.style.fontFamily,
   },
 });
+
 export default theme;

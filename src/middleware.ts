@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 import { isSupportedLanguage } from '@/lib/i18n/isSupportedLanguage';
 
-import { LANGUAGE, i18nConfig } from './lib/i18n';
+import { i18nConfig, LANGUAGE } from './lib/i18n';
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;

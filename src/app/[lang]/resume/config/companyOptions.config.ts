@@ -7,7 +7,7 @@ export type companyOptionsProps = {
   role: string;
 };
 
-export const companyOptions = (dictionary: Dictionary['resume']): companyOptionsProps[] => [
+export const COMPANY_OPTIONS = (dictionary: Dictionary['resume']): companyOptionsProps[] => [
   {
     period: '01/2012 – 06/2022',
     place: dictionary.kaunas,

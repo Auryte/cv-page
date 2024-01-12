@@ -1,8 +1,9 @@
-import { Dictionary } from '@/lib/i18n';
 import { SxProps, Theme } from '@mui/material';
 import { ReactNode } from 'react';
 
-export interface ArticleWithImageProps {
+import { Dictionary } from '@/lib/i18n';
+
+export type ArticleWithImageProps = {
   dictionary:
     | Dictionary['projects']['interior']
     | Dictionary['projects']['weather']
@@ -15,6 +16,6 @@ export interface ArticleWithImageProps {
   sxTypo?: object;
   sxArticleWrapper?: object;
   link: string;
-}
+};
 
 export type ArticleWithImageComponent = (props: ArticleWithImageProps) => ReactNode;

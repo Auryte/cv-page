@@ -1,12 +1,14 @@
-import { Grid } from '@/uiKit/Grid/Grid';
-import { styles } from './Project.styles';
-import { BackgroundedTextBlock } from '@/components/BackgroundedTextBlock/BackgroundedTextBlock';
 import { Article } from '@/components/Article/Article';
 import { ArticleWithImage } from '@/components/ArticleWithImage/ArticleWithImage';
+import { BackgroundedTextBlock } from '@/components/BackgroundedTextBlock/BackgroundedTextBlock';
+import { Grid } from '@/uiKit/Grid/Grid';
+
+import { styles } from './Project.styles';
 import { ProjectComponent } from '../../types/Project.types';
 
 export const Project: ProjectComponent = (props) => {
   const { chapters, dictionary, id, image, link, words } = props;
+
   return (
     <>
       <Grid

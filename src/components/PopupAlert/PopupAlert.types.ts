@@ -1,10 +1,11 @@
-import { Dictionary } from '@/lib/i18n';
 import { FC } from 'react';
 
-interface PopupAlertProps {
+import { Dictionary } from '@/lib/i18n';
+
+type PopupAlertProps = {
   isOpen: boolean;
   dictionary: Dictionary['contact'];
   onClose: () => void;
-}
+};
 
 export type PopupAlertComponent = FC<PopupAlertProps>;

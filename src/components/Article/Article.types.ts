@@ -1,7 +1,8 @@
-import { Dictionary } from '@/lib/i18n';
 import { ReactNode } from 'react';
 
-export interface ArticleProps {
+import { Dictionary } from '@/lib/i18n';
+
+export type ArticleProps = {
   dictionary:
     | Dictionary['resume']
     | Dictionary['projects']['interior']
@@ -10,6 +11,6 @@ export interface ArticleProps {
     | Dictionary['contact'];
   sxTitle?: object;
   sxWrapper?: object;
-}
+};
 
 export type ArticleComponent = (props: ArticleProps) => ReactNode;

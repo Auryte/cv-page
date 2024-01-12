@@ -29,7 +29,7 @@
     "subjectErrorMessage": "Subject must contain at least 3 and at most 100 character(s).",
     "subjectInputLabel": "Subject",
     "submit": "Submit",
-    "summaryArticle": "Always available for work if the right project comes along, Feel free to contact me!",
+    "summaryArticle": "Always available for work if the right project comes along. Feel free to contact me!",
     "summaryTitle": "Contact Info"
   },
   "errorPage": {
@@ -71,6 +71,17 @@
       },
       "summaryArticle": "A user-friendly web application showcasing a curated gallery of interior projects and insightful articles on the technical nuances of interior design. Crafted with a mobile-responsive design, the frontend is powered by React, while the backend utilizes Node.js, Express, and MongoDB for seamless performance. The application features an intuitive admin panel, allowing logged-in administrators to effortlessly manage projects and articles by adding, removing, or modifying content.",
       "summaryTitle": "Interior projects page"
+    },
+    "insurance": {
+      "linkButton": "Go To The Project",
+      "mainFeatures": {
+        "chapter1": "The project was developed using a robust tech stack, including Next.js Page Router for frontend development, Mui for designing the user interface, and Node.js with MongoDB and Mongoose for backend functionality.",
+        "chapter2": "Upholding the highest standards of software quality, all underwent unit testing using Jest and React Testing Library.",
+        "chapter3": "Administrator Portal: The ability to manage employer profiles, insurance plans, and settings.",
+        "chapter4": "Employer Portal: User-friendly interface for employers to manage their data and employees."
+      },
+      "summaryArticle": "In this concise insurance company project, I designed a streamlined system catering to two key roles: administrator and employer. Upon administrator login, a user is presented with two distinct sections - Employers and Claims. The Employers section allows for the modification of each employer's profile, adjustment of insurance plans, and other customizable settings. In the Claims section, a comprehensive overview of all claims is available, with the ability to approve or reject them.The employer portal provides a user-friendly interface to view personal data, manage all employees, and edit their information. Additionally, employers can assign insurance plans and upload a list of employees from a file. The entire project was implemented using Next.js Page Router, Mui for the frontend, and Node.js for the backend, ensuring a seamless and efficient system.",
+      "summaryTitle": "Simplified Insurance Company Management System"
     },
     "starwars": {
       "linkButton": "Go To The Project",
@@ -126,11 +137,13 @@
       "chapter8": "Collaborated closely with the backend development team using MongoDB, contributing to the implementation of various search and filtering methods for different tables. This greatly improved the efficiency of data retrieval."
     },
     "insuaranceProject": {
-      "title": "INSUARANCE APP PROJECT",
-      "introduction": "The goal of the training was to learn how to work in a team using the SCRUM methodology. The training program covered the following aspects: Requirement analysis, dividing project into stories, estimating, Sprint planning, refinement, review, retrospective sessions",
-      "chapter1": "Creation of REST API’s",
-      "chapter2": "Managing Authentication and Access Rights",
-      "chapter3": "Code review, refactoring, bug fixing"
+      "title": "INSURANCE APP PROJECT",
+      "introduction": "I had the privilege of being part of a dynamic and collaborative team that worked on an innovative insurance business application. This application was designed to empower companies to effortlessly offer comprehensive insurance packages with diverse plans for their employees. The project revolved around the development of two distinct portals catering to the needs of both administrators and employers.",
+      "chapter1": "Our team adopted the SCRUM methodology, ensuring a structured and iterative approach to project management. This involved a seamless integration of various phases such as requirement analysis, story division, estimation, sprint planning, refinement, review, and retrospective sessions. This methodology not only streamlined our workflow but also enhanced our ability to adapt to evolving project requirements.",
+      "chapter2": "We developed a set of REST APIs to facilitate seamless communication between different components of the application, ensuring optimal performance and scalability.",
+      "chapter3": "Security was paramount, and thus, we implemented robust authentication mechanisms and access rights management to safeguard sensitive information and ensure data integrity.",
+      "chapter4": "Upholding the highest standards of software quality, all code contributions underwent thorough unit testing to identify and rectify any potential issues before deployment.",
+      "chapter5": "Comprehensive documentation is vital for the longevity of any project. We meticulously documented all Express APIs using Swagger UI and JSDoc, ensuring that future development teams and stakeholders have clear insights into the system architecture and functionalities."
     },
     "kaunas": "Kaunas, Lithuania",
     "ktu": "Kaunas University of Technology",

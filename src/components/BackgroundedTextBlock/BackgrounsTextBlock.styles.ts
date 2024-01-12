@@ -11,7 +11,10 @@ const commonProps = {
 export const styles = {
   sectionWrapper: {
     marginX: 'auto',
-    width: { md: '738px', xs: '100%' },
+    width: {
+      md: '738px',
+      xs: '100%',
+    },
     marginY: '80px',
   },
   bgGrey: {

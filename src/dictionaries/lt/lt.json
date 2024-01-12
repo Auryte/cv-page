@@ -2,7 +2,7 @@
   "about": {
     "download": "Atsisiųsk CV",
     "linkButton": "Susisiekite",
-    "introduction": "Atsidavusi ir iniciatyvi programų kūrėja su tvirta pagrindine front-end technologijų ir Agile metodologijų žiniomis. Patyrusi bendradarbiaujant įvairiuose projektuose, taikant SCRUM praktikas, siekiant sukurti aukštos kokybės programas. Mokanti naudoti React, JavaScript ir Node.js. Trokštu prisidėti savo įgūdžiais ir patirtimi prie inovatyvių projektų.",
+    "introduction": "Atsidavusi ir iniciatyvi programų kūrėja su tvirtomis front-end technologijų ir Agile metodologijų žiniomis. Patyrusi bendradarbiaujant įvairiuose projektuose, taikant SCRUM praktikas, siekiant sukurti aukštos kokybės programas. Mokanti naudoti React, JavaScript ir Node.js. Trokštu prisidėti savo įgūdžiais ir patirtimi prie inovatyvių projektų.",
     "mainFeatures": {
       "chapter1": "Kaip asmuo, pasišventęs front-end programavimo sričiai, esu tobulinusi savo įgūdžius naudodama React ir kitas alternatyvas, siekdama sukurti funkcionalias ir vizualiai patrauklias interneto programas. Puikiai suprantu vienetų testavimo svarbą ir naudą, palaikant kodo kokybę bei patikimumą. Taip pat turiu gilias žinias „TypeScript“, ir gebu efektyviai dirbti su CSS bei HTML, siekdama sukurti sklandžią vartotojo patirtį."
     },
@@ -72,6 +72,17 @@
       "summaryArticle": "Patogi žiniatinklio programa, kurioje pristatoma kuruojama interjero projektų galerija ir įžvalgūs straipsniai apie techninius interjero dizaino niuansus. Sukurta naudojant mobiliesiems pritaikytą dizainą, priekinė dalis atlikta su „React“, o užpakalinėje sistemoje naudojami „Node.js“, „Express“ ir „MongoDB“, kad būtų užtikrintas sklandus veikimas. Programoje yra intuityvus administratoriaus skydelis, leidžiantis prisijungusiems administratoriams be vargo valdyti projektus ir straipsnius pridedant, pašalinant arba keičiant turinį.",
       "summaryTitle": "Interjero projektų puslapis"
     },
+    "insurance": {
+      "linkButton": "Susipažinti su projektu",
+      "mainFeatures": {
+        "chapter1": "Projektas buvo sukurtas naudojant patikimą technologijų rinkinį - įskaitant Next.js, Mui bei Node.js su MongoDB ir Mongoose backend daliai.",
+        "chapter2": "Laikantis aukščiausių programinės įrangos kokybės standartų, buvo atliktas vienetų testavimas naudojant Jest ir React Testing Library.",
+        "chapter3": "Administratoriaus portalas: galimybė valdyti darbdavio profilius, draudimo planus ir nustatymus.",
+        "chapter4": "Darbdavių portalas: patogi sąsaja, skirta darbdaviams valdyti savo duomenis ir darbuotojus."
+      },
+      "summaryArticle": "Vykdydama šį glaustą draudimo bendrovės projektą sukūriau supaprastintą sistemą, atitinkančią du pagrindinius vaidmenis: administratorių ir darbdavį. Administratoriui prisijungus, vartotojui pateikiami du skirtingi skyriai – Darbdaviai ir Pretenzijos. Skyriuje Darbdaviai galima keisti kiekvieno darbdavio profilį, koreguoti draudimo planus ir kitus pritaikomus nustatymus. Pretenzijų skiltyje pateikiama išsami visų pretenzijų apžvalga su galimybe jas patvirtinti arba atmesti. Darbdavių portale yra patogi sąsaja, skirta peržiūrėti asmens duomenis, valdyti visus darbuotojus ir redaguoti jų informaciją. Be to, darbdaviai gali priskirti draudimo planus ir įkelti darbuotojų sąrašą iš failo. Visas projektas buvo įgyvendintas naudojant „Next.js Page Router“, „Mui“ bei „Node.js“ užpakalinei sistemai, užtikrinant sklandų ir efektyvų veikimą.",
+      "summaryTitle": "Supaprastinta draudimo įmonių valdymo sistema"
+    },
     "starwars": {
       "linkButton": "Susipažinti su projektu",
       "mainFeatures": {
@@ -127,10 +138,12 @@
     },
     "insuaranceProject": {
       "title": "DRAUDIMO APLIKACIJOS PROJEKTAS",
-      "introduction": "Mokymų tikslas buvo išmokti dirbti komandoje naudojant SCRUM metodiką. Mokymų programa apėmė šiuos aspektus: Reikalavimų analizė, projekto padalijimas į istorijas, įvertinimas, Sprinto planavimas, tobulinimas, peržiūra, retrospektyvinės sesijos.",
-      "chapter1": "REST API’s kūrimas",
-      "chapter2": "Autentifikavimo ir prieigos teisių valdymas",
-      "chapter3": "Kodo peržiūra, pertvarkymas, klaidų taisymas"
+      "introduction": "Man teko privilegija būti dinamiškos ir glaudžiai bendradarbiaujančios komandos, kuri dirbo prie naujoviškos draudimo verslo programos, dalimi. Ši programa buvo sukurta siekiant suteikti įmonėms galimybę be vargo pasiūlyti išsamius draudimo paketus su įvairiais planais savo darbuotojams. Projektas buvo susijęs su dviejų skirtingų portalų kūrimu, tenkinančių tiek administratorių, tiek darbdavių poreikius.",
+      "chapter1": "Mūsų komanda pasirinko SCRUM metodiką, užtikrinančią struktūrinį požiūrį į projektų valdymą. Tai apėmė sklandų įvairių etapų, tokių kaip poreikių analizė, istorijos padalijimas, įvertinimas, sprinto planavimas, tobulinimas, peržiūra ir retrospektyvinės sesijos, integravimą. Ši metodika ne tik supaprastino mūsų darbo eigą, bet ir pagerino mūsų gebėjimą prisitaikyti prie kintančių projekto reikalavimų.",
+      "chapter2": "Sukūrėme REST API rinkinį, kad palengvintume sklandų ryšį tarp skirtingų programos komponentų, užtikrindami optimalų našumą ir mastelį.",
+      "chapter3": "Saugumas buvo svarbiausias dalykas, todėl įdiegėme patikimus autentifikavimo mechanizmus ir prieigos teisių valdymą, kad apsaugotume slaptą informaciją ir užtikrintume duomenų vientisumą.",
+      "chapter4": "Laikantis aukščiausių programinės įrangos kokybės standartų, visi kodo elementai buvo kruopščiai išbandyti vienetiniais testais, siekiant nustatyti ir pašalinti visas galimas problemas prieš įdiegiant.",
+      "chapter5": "Išsami dokumentacija yra gyvybiškai svarbi bet kurio projekto ilgaamžiškumui. Kruopščiai dokumentavome visas „Express API“ naudodami „Swagger UI“ ir „JSDoc“, užtikrindami, kad būsimos kūrimo komandos ir suinteresuotosios šalys turėtų aiškią įžvalgą apie sistemos architektūrą ir funkcijas."
     },
     "kaunas": "Kaunas, Lietuva",
     "ktu": "Kauno Technologijų universitetas",
@@ -146,7 +159,7 @@
       "chapter4": "Vanilla JS praktikos",
       "chapter5": "Backend vystymas su MongoDB, Node.js"
     },
-    "summaryArticle": "Į rezultatus orientuota front-end kūrėja, daug dėmesio skirianti React ir alternatyvioms sistemoms, kad sukurtų vizualiai patrauklias ir funkcionalias žiniatinklio programas. Atsižvelgdamas į kodo kokybę, pirmenybę teikiu vienetų tikrinimui dėl patikimumo. Išmanau „TypeScript“. Sklandžiai derinu CSS ir HTML, kad sukurčiau patrauklią vartotojo patirtį. Įrodyta sėkmingų projektų pristatymo laiku patirtis. TrokšU savo žiniomis prisidėti prie dinamiškų komandų, peržengiančių žiniatinklio kūrimo ribas.",
+    "summaryArticle": "Į rezultatus orientuota front-end kūrėja, daug dėmesio skirianti React ir alternatyvioms sistemoms, kad sukurtų vizualiai patrauklias ir funkcionalias žiniatinklio programas. Atsižvelgdamas į kodo kokybę, pirmenybę teikiu vienetų tikrinimui dėl patikimumo. Išmanau „TypeScript“. Sklandžiai derinu CSS ir HTML, kad sukurčiau patrauklią vartotojo patirtį. Įrodyta sėkmingų projektų pristatymo laiku patirtis. Trokštu savo žiniomis prisidėti prie dinamiškų komandų, peržengiančių žiniatinklio kūrimo ribas.",
     "summaryTitle": "Gyvenimo aprašymo santrauka",
     "techSkills": "Techniniai įgūdžiai/ įrankiai ir technologijos: React, Redux, Redux-saga, Redux-form, Next.js, Typescript, MUI, React-Hook-Form, Formik, Yup, Jest, MSW, Node js, Express, JWT, Bcrypt, AJV, Joi, Swagger, JSDoc, Cloudinary ",
     "tools": "Įrankiai, aplinka, kalbos ir technologijos:",

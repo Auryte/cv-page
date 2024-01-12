@@ -1,14 +1,16 @@
-export enum LANGUAGE {
-  en = 'en',
-  lt = 'lt',
-}
+export const language = {
+  en: 'en',
+  lt: 'lt',
+} as const;
+
+export type LANGUAGE = keyof typeof language;
 
 type I18nConfig = {
-  defaultLanguage: LANGUAGE.en;
+  defaultLanguage: typeof language.en;
   supportedLanguages: LANGUAGE[];
 };
 
 export const i18nConfig: I18nConfig = {
-  defaultLanguage: LANGUAGE.en,
-  supportedLanguages: [LANGUAGE.en, LANGUAGE.lt],
+  defaultLanguage: language.en,
+  supportedLanguages: [language.en, language.lt],
 };

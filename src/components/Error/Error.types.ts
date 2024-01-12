@@ -1,10 +1,11 @@
-import { Dictionary } from '@/lib/i18n';
 import { FC } from 'react';
 
-export interface ErrorProps {
+import { Dictionary } from '@/lib/i18n';
+
+export type ErrorProps = {
   dictionary: Dictionary['errorPage'];
   error: Error & { digest?: string };
   reset: () => void;
-}
+};
 
 export type ErrorComponent = FC<ErrorProps>;

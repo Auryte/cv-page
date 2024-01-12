@@ -1,6 +1,10 @@
 export const styles = {
   wrapper: {
-    display: { xs: 'none', md: 'flex', width: '100%' },
+    display: {
+      xs: 'none',
+      md: 'flex',
+      width: '100%',
+    },
     color: 'text.main',
     backgroundColor: 'inherit',
   },
@@ -11,6 +15,10 @@ export const styles = {
     height: '18px',
   },
   text: {
+    color: 'text.main',
+  },
+  phoneLink: {
+    textDecoration: 'none',
     color: 'text.main',
   },
 };

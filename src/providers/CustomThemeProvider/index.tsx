@@ -1,10 +1,12 @@
 'use client';
 
-import React, { createContext, useState } from 'react';
 import { ThemeProvider } from '@mui/material';
-import getTheme from './themes';
+import React, { createContext, useState } from 'react';
+
 import { THEME_NAME } from '@/constants';
 import { getCookie, setThemeCookie } from '@/utils/cookies';
+
+import getTheme from './themes';
 
 export type ThemeContextData = {
   currentTheme: string;
@@ -36,6 +38,7 @@ const CustomThemeProvider = ({ children }: ProviderProps) => {
     currentTheme: themeName as string,
     setTheme,
   };
+
   return (
     <CustomThemeContext.Provider value={contextValue}>
       <ThemeProvider theme={theme}>{children}</ThemeProvider>

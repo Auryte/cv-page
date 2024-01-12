@@ -1,24 +1,30 @@
 'use client';
 
+import { useContext } from 'react';
+
+import { THEME_NAME } from '@/constants';
+import { CustomThemeContext } from '@/providers/CustomThemeProvider';
 import { Grid } from '@/uiKit/Grid/Grid';
 import { Icon } from '@/uiKit/Icon/Icon';
 import { Typography } from '@/uiKit/Typography/Typography';
-import { styles } from '../WorkExperience/WorkExperience.styles';
+
 import { companyOptionsProps } from '../../config/companyOptions.config';
-import { useContext } from 'react';
-import { CustomThemeContext } from '@/providers/CustomThemeProvider';
-import { THEME_NAME } from '@/constants';
+import { styles } from '../WorkExperience/WorkExperience.styles';
 
 export const Company = (props: { options: companyOptionsProps }) => {
   const { currentTheme } = useContext(CustomThemeContext);
   const { options } = props;
+
   return (
     <>
       <Grid
         container
         justifyContent='flex-start'
         columnGap='8px'
-        sx={{ paddingTop: '24px', color: 'text.main' }}
+        sx={{
+          paddingTop: '24px',
+          color: 'text.main',
+        }}
       >
         <Icon
           name='calendar'

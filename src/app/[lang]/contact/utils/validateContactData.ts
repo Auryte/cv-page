@@ -1,4 +1,5 @@
 import { Dictionary } from '@/lib/i18n';
+
 import { contactDataSchema } from './contactDataSchema';
 
 export const validateContactData = (payload: unknown, dictionary: Dictionary['contact']) => {

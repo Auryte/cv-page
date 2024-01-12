@@ -1,7 +1,8 @@
-import { Dictionary, LANGUAGE } from '@/lib/i18n';
 import { FC } from 'react';
 
-export type IdProps = 'weather' | 'interior' | 'starwars';
+import { Dictionary } from '@/lib/i18n';
+
+export type IdProps = 'weather' | 'insurance' | 'interior' | 'starwars';
 
 export type ProjectOptionsProps = {
   id: IdProps;
@@ -11,12 +12,13 @@ export type ProjectOptionsProps = {
   chapters?: string[];
 };
 
-export interface ProjectProps {
+export type ProjectProps = {
   dictionary: Dictionary['projects'];
   id: IdProps;
   image: string;
   chapters: string[];
   link: string;
   words: string[];
-}
+};
+
 export type ProjectComponent = FC<ProjectProps>;

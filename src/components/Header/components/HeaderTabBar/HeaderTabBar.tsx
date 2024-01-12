@@ -3,12 +3,13 @@
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import Link from 'next/link';
-import { useState, SyntheticEvent, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
+import { SyntheticEvent, useEffect, useState } from 'react';
+
+import { currentTab } from '@/utils/header';
 
 import { HeaderTabBarComponent } from './../../Header.types';
 import { styles } from './HeaderTabBar.styles';
-import { usePathname } from 'next/navigation';
-import { currentTab } from '@/utils/header';
 
 export const HeaderTabBar: HeaderTabBarComponent = (props) => {
   const { pages, dictionary } = props;
@@ -17,7 +18,7 @@ export const HeaderTabBar: HeaderTabBarComponent = (props) => {
 
   useEffect(() => {
     setPage(currentTab(pathname, dictionary));
-  }, [pathname]);
+  }, [pathname, dictionary]);
 
   const handleChange = (event: SyntheticEvent, newPage: string) => {
     setPage(newPage);

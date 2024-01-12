@@ -1,12 +1,15 @@
 'use client';
+
+import { useContext } from 'react';
+
 import { Dictionary } from '@/lib/i18n';
+import { CustomThemeContext } from '@/providers/CustomThemeProvider';
 import { Box } from '@/uiKit/Box/Box';
 import { Grid } from '@/uiKit/Grid/Grid';
 import { Typography } from '@/uiKit/Typography/Typography';
 import { getProfileImage } from '@/utils/getImages';
+
 import { image, styles } from './Banner.styles';
-import { CustomThemeContext } from '@/providers/CustomThemeProvider';
-import { useContext } from 'react';
 import { Heading } from '../Heading/Heading';
 
 export const Banner = (props: { dictionary: Dictionary['home'] }) => {
@@ -17,7 +20,10 @@ export const Banner = (props: { dictionary: Dictionary['home'] }) => {
     <Grid
       container
       justifyContent='space-between'
-      sx={{ padding: 6, backgroundColor: 'inherit' }}
+      sx={{
+        padding: 6,
+        backgroundColor: 'inherit',
+      }}
     >
       <Grid
         container
@@ -25,7 +31,7 @@ export const Banner = (props: { dictionary: Dictionary['home'] }) => {
         xs={12}
         md={8}
         direction='column'
-        justifyContent={'center'}
+        justifyContent='center'
         alignContent='start'
         display='flex'
         sx={styles.mainWrapper}

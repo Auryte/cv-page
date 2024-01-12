@@ -11,5 +11,6 @@ const dictionaries: Record<LANGUAGE, () => Promise<DictionaryModule>> = {
 export const getDictionary = async (language?: LANGUAGE) => {
   const lang = isSupportedLanguage(language) ? language : i18nConfig.defaultLanguage;
   const langModule = await dictionaries[lang]();
+
   return langModule.default;
 };

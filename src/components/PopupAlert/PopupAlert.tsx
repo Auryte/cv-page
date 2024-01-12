@@ -1,13 +1,16 @@
-import { Button } from '@/uiKit/Button/Button';
 import { Dialog, DialogActions, DialogContent, DialogTitle } from '@mui/material';
-import { styles } from './PopupAlert.styles';
-import { Image } from '../Image/Image';
+
 import IconSent from '@/public/iconsSent.png';
+import { Button } from '@/uiKit/Button/Button';
 import { Grid } from '@/uiKit/Grid/Grid';
+
+import { styles } from './PopupAlert.styles';
 import { PopupAlertComponent } from './PopupAlert.types';
+import { Image } from '../Image/Image';
 
 export const PopupAlert: PopupAlertComponent = (props) => {
   const { isOpen, dictionary, onClose } = props;
+
   return (
     <Dialog
       open={isOpen}

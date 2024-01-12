@@ -3,6 +3,7 @@ import { Box } from '@/uiKit/Box/Box';
 
 export const CustomExpandIcon = (props: { dictionary: Dictionary['resume'] }) => {
   const { dictionary } = props;
+
   return (
     <Box
       sx={{

@@ -1,18 +1,19 @@
 import Link from 'next/link';
 
-import { AboutContentComponent } from './AboutContent.types';
 import { ArticleWithImage } from '@/components/ArticleWithImage/ArticleWithImage';
-
+import { language } from '@/lib/i18n';
 import { Box } from '@/uiKit/Box/Box';
 import { Button } from '@/uiKit/Button/Button';
-import { getAboutImage, getCV } from '@/utils/getImages';
 import { Grid } from '@/uiKit/Grid/Grid';
+import { Typography } from '@/uiKit/Typography/Typography';
+import { getAboutImage, getCVEN, getCVLT } from '@/utils/getImages';
 
 import { styles } from './AboutContent.styles';
-import { Typography } from '@/uiKit/Typography/Typography';
+import { AboutContentComponent } from './AboutContent.types';
 
 export const AboutContent: AboutContentComponent = (props) => {
   const { dictionary, lang } = props;
+
   return (
     <>
       <Grid
@@ -37,7 +38,6 @@ export const AboutContent: AboutContentComponent = (props) => {
           <Typography
             variant='h3'
             sx={styles.quoteGrey}
-            style={{ fontWeight: 100 }}
           >
             {dictionary.quote1}
           </Typography>
@@ -76,7 +76,7 @@ export const AboutContent: AboutContentComponent = (props) => {
           md={4}
         >
           <Link
-            href={getCV}
+            href={lang === language.lt ? getCVLT : getCVEN}
             target='_blank'
           >
             <Button

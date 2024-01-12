@@ -6,6 +6,8 @@
 # testing
 /coverage
 /playwright-report
+/playwright/.cache/
+/test-results/
 
 # next.js
 /.next/
@@ -33,10 +35,4 @@ next-env.d.ts
 # IDE
 .idea
 .vscode
-/test-results/
-/playwright-report/
-/playwright/.cache/
-/test-results/
-/playwright-report/
 /blob-report/
-/playwright/.cache/

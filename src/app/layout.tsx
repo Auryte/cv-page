@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation';
 import type { FC, PropsWithChildren } from 'react';
 
-import { LANGUAGE, isSupportedLanguage } from '@/lib/i18n';
+import { LANGUAGE } from '@/lib/i18n';
 import ThemeRegistry from '@/providers/ThemeRegistry/ThemeRegistry';
 
 import { roboto } from './fonts';

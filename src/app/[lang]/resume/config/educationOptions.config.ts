@@ -1,6 +1,6 @@
 import { Dictionary } from '@/lib/i18n';
 
-export const educationOptions = (dictionary: Dictionary['resume']) => [
+export const EDUCATION_OPTIONS = (dictionary: Dictionary['resume']) => [
   {
     subTitle: dictionary.faculty,
     title: dictionary.ktu,

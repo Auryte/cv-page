@@ -4,8 +4,9 @@ import { usePathname, useRouter } from 'next/navigation';
 
 import { i18nConfig } from '@/lib/i18n';
 import { Box } from '@/uiKit/Box/Box';
-import { setLocaleCookie } from '@/utils/cookies';
 import { Button } from '@/uiKit/Button/Button';
+import { setLocaleCookie } from '@/utils/cookies';
+
 import { styles } from './LocaleSwitcher.styles';
 
 const LocaleSwitcher = () => {
@@ -21,10 +22,12 @@ const LocaleSwitcher = () => {
     if (!pathName) {
       return '/';
     }
+
     setLocaleCookie(neededLocale);
     const segments = pathName.split('/');
     segments[1] = neededLocale;
     router.push(segments.join('/'));
+
     return segments.join('/');
   };
 

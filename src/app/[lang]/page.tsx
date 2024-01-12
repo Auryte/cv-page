@@ -1,8 +1,8 @@
-import { getDictionary, LANGUAGE } from '@/lib/i18n';
 import { Banner } from '@/components/Banner/Banner';
+import { getDictionary, LANGUAGE } from '@/lib/i18n';
 
 export const metadata = {
-  description: 'Aureja Slance | Home',
+  description: 'Aureja Slance - Front-end developer.',
   title: 'Aureja Slance | Home',
 };
 

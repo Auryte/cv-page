@@ -8,7 +8,7 @@ export const styles = {
     fontStyle: 'normal',
     fontWeight: '500',
     lineHeight: 'normal',
-    paddingLeft: '5px',
+    paddingLeft: '16px',
     width: 'fit-content',
     color: 'text.main',
   },

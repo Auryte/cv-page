@@ -1,13 +1,15 @@
 'use client';
 
+import { AccordionDetails, AccordionSummary, List, ListItem } from '@mui/material';
+import MuiAccordion from '@mui/material/Accordion';
+import { useState } from 'react';
+
+import { WorkExperienceProps } from '@/app/[lang]/resume/config/experienceOptions.config';
 import { CustomExpandIcon } from '@/components/Accordion/components/CustomExpandIcon/CustomExpandIcon';
 import { Box } from '@/uiKit/Box/Box';
 import { Typography } from '@/uiKit/Typography/Typography';
-import { AccordionDetails, AccordionSummary, List, ListItem } from '@mui/material';
-import MuiAccordion from '@mui/material/Accordion';
+
 import { styles } from './Accordion.styles';
-import { useState } from 'react';
-import { WorkExperienceProps } from '@/app/[lang]/resume/config/experienceOptions.config';
 import { AccordionComponent } from './Accordion.types';
 
 export const Accordion: AccordionComponent = (props) => {
@@ -17,6 +19,7 @@ export const Accordion: AccordionComponent = (props) => {
   const handleChange = (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
     setExpanded(isExpanded ? panel : false);
   };
+
   return (
     <>
       {accordionContent.map((content: WorkExperienceProps, index: number) => (
@@ -40,9 +43,9 @@ export const Accordion: AccordionComponent = (props) => {
           </AccordionSummary>
           <AccordionDetails sx={styles.accordionDetails}>
             <List sx={styles.list}>
-              {content.chapters.map((chapter: string, index: number) => (
+              {content.chapters.map((chapter: string, indx: number) => (
                 <ListItem
-                  key={index}
+                  key={indx}
                   sx={{ display: 'list-item' }}
                 >
                   {chapter}

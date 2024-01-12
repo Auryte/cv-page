@@ -1,11 +1,14 @@
+import { Button } from '@mui/material';
+
 import { Box } from '@/uiKit/Box/Box';
 import { Typography } from '@/uiKit/Typography/Typography';
-import { Button } from '@mui/material';
+
 import { styles } from './Error.styles';
 import { ErrorComponent } from './Error.types';
 
 export const ErrorContent: ErrorComponent = (props) => {
   const { dictionary, error, reset } = props;
+
   return (
     <Box sx={styles.wrapper}>
       <Typography
@@ -16,7 +19,7 @@ export const ErrorContent: ErrorComponent = (props) => {
       </Typography>
       {error?.message && (
         <Typography variant='h6'>
-          {dictionary?.error} "{error.message}"
+          {dictionary?.error} &quot{error.message}&quot
         </Typography>
       )}
       <Button

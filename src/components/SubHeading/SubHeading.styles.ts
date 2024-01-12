@@ -15,12 +15,18 @@ export const styles = {
       height: '120px',
       bgcolor: 'secondary.main',
       position: 'absolute',
-      right: { md: '-80px', xs: '-40px' },
+      right: {
+        md: '-80px',
+        xs: '-40px',
+      },
       zIndex: -1,
     },
   },
   wrapper: {
-    width: { md: '40%', xs: '90%' },
+    width: {
+      md: '40%',
+      xs: '90%',
+    },
     margin: 0,
   },
 };

@@ -1,6 +1,9 @@
 export const styles = {
   menu: {
-    'display': { xs: 'block', md: 'none' },
+    'display': {
+      xs: 'block',
+      md: 'none',
+    },
     'marginTop': '14px',
     '& .MuiPaper-root': {
       minWidth: '100%',

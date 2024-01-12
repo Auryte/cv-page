@@ -72,6 +72,17 @@ export type Dictionary = {
       summaryArticle: string;
       summaryTitle: string;
     };
+    insurance: {
+      linkButton: string;
+      mainFeatures: {
+        chapter1: string;
+        chapter2: string;
+        chapter3: string;
+        chapter4: string;
+      };
+      summaryArticle: string;
+      summaryTitle: string;
+    };
     starwars: {
       linkButton: string;
       mainFeatures: {
@@ -131,6 +142,8 @@ export type Dictionary = {
       chapter1: string;
       chapter2: string;
       chapter3: string;
+      chapter4: string;
+      chapter5: string;
     };
     kaunas: string;
     ktu: string;

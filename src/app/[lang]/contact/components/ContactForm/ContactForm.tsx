@@ -3,14 +3,14 @@
 import { ChangeEvent, FormEvent, useCallback } from 'react';
 
 import { PopupAlert } from '@/components/PopupAlert/PopupAlert';
-
+import { fields } from '@/constants';
 import { Button } from '@/uiKit/Button/Button';
 import { Grid } from '@/uiKit/Grid/Grid';
 import { TextField } from '@/uiKit/TextField/TextField';
 import { Typography } from '@/uiKit/Typography/Typography';
 
-import { ContactFormComponent } from '../../types/ContactPage.types';
 import { styles } from './ContactForm.styles';
+import { ContactFormComponent } from '../../types/ContactPage.types';
 
 export const ContactForm: ContactFormComponent = (props) => {
   const {
@@ -18,10 +18,6 @@ export const ContactForm: ContactFormComponent = (props) => {
     email,
     emailError,
     error,
-    isEmailError,
-    isMessageError,
-    isNameError,
-    isSubjectError,
     isSubmitDisabled,
     message,
     messageError,
@@ -35,22 +31,12 @@ export const ContactForm: ContactFormComponent = (props) => {
     success,
   } = props;
 
-  const handleNameChange = useCallback(
-    (event: ChangeEvent<HTMLInputElement>) => onChange({ name: event.target.value }),
+  const handleChange = useCallback(
+    (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, inputName: string) =>
+      onChange({ [inputName]: event.target.value }),
     [onChange],
   );
-  const handleEmailChange = useCallback(
-    (event: ChangeEvent<HTMLInputElement>) => onChange({ email: event.target.value }),
-    [onChange],
-  );
-  const handleSubjectChange = useCallback(
-    (event: ChangeEvent<HTMLInputElement>) => onChange({ subject: event.target.value }),
-    [onChange],
-  );
-  const handleMessageChange = useCallback(
-    (event: ChangeEvent<HTMLInputElement>) => onChange({ message: event.target.value }),
-    [onChange],
-  );
+
   const handleSubmit = useCallback(
     (event: FormEvent<HTMLFormElement>) => {
       event.preventDefault();
@@ -77,30 +63,30 @@ export const ContactForm: ContactFormComponent = (props) => {
       >
         <TextField
           color='info'
-          error={isNameError}
-          helperText={isNameError ? nameError : ''}
+          error={!!nameError}
+          helperText={nameError || ''}
           label={dictionary.nameInputLabel}
-          onChange={handleNameChange}
+          onChange={(event) => handleChange(event, fields.name)}
           sx={styles.inputLabel}
           value={name}
           variant='outlined'
         />
         <TextField
           color='info'
-          error={isEmailError}
-          helperText={isEmailError ? emailError : ''}
+          error={!!emailError}
+          helperText={emailError || ''}
           label={dictionary.emailInputLabel}
-          onChange={handleEmailChange}
+          onChange={(event) => handleChange(event, fields.email)}
           sx={styles.inputLabel}
           value={email}
           variant='outlined'
         />
         <TextField
           color='info'
-          error={isSubjectError}
-          helperText={isSubjectError ? subjectError : ''}
+          error={!!subjectError}
+          helperText={subjectError || ''}
           label={dictionary.subjectInputLabel}
-          onChange={handleSubjectChange}
+          onChange={(event) => handleChange(event, fields.subject)}
           sx={styles.inputLabel}
           value={subject}
           variant='outlined'
@@ -110,10 +96,10 @@ export const ContactForm: ContactFormComponent = (props) => {
           multiline
           minRows={5}
           maxRows={7}
-          error={isMessageError}
-          helperText={isMessageError ? messageError : ''}
+          error={!!messageError}
+          helperText={messageError || ''}
           label={dictionary.messagetInputLabel}
-          onChange={handleMessageChange}
+          onChange={(event) => handleChange(event, fields.message)}
           sx={styles.inputLabel}
           value={message}
           variant='outlined'

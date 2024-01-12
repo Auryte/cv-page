@@ -1,6 +1,7 @@
-import light from './light';
-import dark from './dark';
 import { THEME_NAME } from '@/constants';
+
+import dark from './dark';
+import light from './light';
 
 const themes = {
   [THEME_NAME.LIGHT]: light,

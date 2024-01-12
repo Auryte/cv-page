@@ -1,6 +1,8 @@
-import { Dictionary } from '@/lib/i18n';
-import { HeaderConfigTypes } from './config/headerOptions.config';
 import { FC } from 'react';
+
+import { Dictionary } from '@/lib/i18n';
+
+import { HeaderConfigTypes } from './config/headerOptions.config';
 
 export type HeaderTypes = {
   dictionary: Dictionary['headerMenu'];

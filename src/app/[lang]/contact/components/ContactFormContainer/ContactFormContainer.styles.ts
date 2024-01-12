@@ -21,4 +21,8 @@ export const styles = {
     color: 'text.main',
     margin: '16px 16px 16px 0',
   },
+  iconLinkedin: {
+    color: 'text.main',
+    margin: '20px 16px 16px 0',
+  },
 };

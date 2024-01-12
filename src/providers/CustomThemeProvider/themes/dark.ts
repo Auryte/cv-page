@@ -1,10 +1,9 @@
 import { createTheme, Theme } from '@mui/material/styles';
+
 import '@mui/material/styles/createPalette';
 import { roboto } from '@/app/fonts';
 
 const PRIMARY_COLOR = '#323030';
-const PRIMARY_COLOR_DARK = '#E3E2E2';
-const PRIMARY_COLOR_LIGHT = '#504A4A';
 const COMMON_COLOR_DARK = '#1a1919';
 const SECONDARY_COLOR = '#F0FF00';
 const SECONDARY_COLOR_LIGHT = '#818181';
@@ -61,4 +60,5 @@ const theme: Theme = createTheme({
     fontFamily: roboto.style.fontFamily,
   },
 });
+
 export default theme;

@@ -1,12 +1,13 @@
 'use client';
 
-import { useState } from 'react';
-import { IconButton, Menu, MenuItem } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import { styles } from './HeaderMobileMenu.styles';
+import MenuIcon from '@mui/icons-material/Menu';
+import { IconButton, Menu, MenuItem } from '@mui/material';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useState } from 'react';
+
+import { styles } from './HeaderMobileMenu.styles';
 import { HeaderConfigTypes } from '../../config/headerOptions.config';
 
 export const HeaderMobileMenu = (props: { pages: HeaderConfigTypes[] }) => {

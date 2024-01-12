@@ -1,12 +1,15 @@
 'use client';
 
+import React, { useCallback, useContext } from 'react';
+
 import LocaleSwitcher from '@/components/LocaleSwitcher/LocaleSwitcher';
 import { THEME_NAME } from '@/constants';
 import { CustomThemeContext } from '@/providers/CustomThemeProvider';
 import { Button } from '@/uiKit/Button/Button';
 import { Grid } from '@/uiKit/Grid/Grid';
 import { Icon } from '@/uiKit/Icon/Icon';
-import React, { useContext, useCallback } from 'react';
+
+import { styles } from './HeaderIconsMenu.styles';
 
 export const HeaderIconsMenu = () => {
   const { currentTheme, setTheme } = useContext(CustomThemeContext);
@@ -29,17 +32,17 @@ export const HeaderIconsMenu = () => {
     >
       <Button
         onClick={handleThemeChange}
-        sx={{ maxWidth: '32px', minWidth: '32px' }}
+        sx={styles.button}
       >
         {currentTheme === THEME_NAME.DARK ? (
           <Icon
             name='lightTheme'
-            sx={{ width: '24px', height: '24px', color: 'text.main' }}
+            sx={styles.iconLight}
           />
         ) : (
           <Icon
             name='darkTheme'
-            sx={{ width: '16px', height: '16px', color: 'text.main' }}
+            sx={styles.iconDark}
           />
         )}
       </Button>

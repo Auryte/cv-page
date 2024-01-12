@@ -1,19 +1,18 @@
 'use client';
 
-import { ContactFormState, ContactFormReducerTypes, UseContactPageStoreType } from '../types/ContactPage.types';
-import { useEffect, useReducer } from 'react';
-import { validateContactData } from '@/services/validateContactData';
 import emailjs from '@emailjs/browser';
-import { filteredError, getTemplateId } from '@/utils/contactStore';
+import { useEffect, useReducer } from 'react';
+
+import { filteredError, getTemplateId } from '@/app/[lang]/contact/utils/contactHelpers';
+import { validateContactData } from '@/app/[lang]/contact/utils/validateContactData';
+import { fields } from '@/constants';
+
+import { ContactFormReducerTypes, ContactFormState, UseContactPageStoreType } from '../types/ContactPage.types';
 
 const initialState: ContactFormState = {
   email: '',
   emailError: '',
   error: '',
-  isEmailError: false,
-  isMessageError: false,
-  isNameError: false,
-  isSubjectError: false,
   isSubmitDisabled: false,
   message: '',
   messageError: '',
@@ -34,19 +33,6 @@ export const useContactPageStore: UseContactPageStoreType = (dictionary, lang) =
   );
 
   const submit = () => {
-    setState({
-      emailError: '',
-      error: '',
-      isEmailError: false,
-      isMessageError: false,
-      isNameError: false,
-      isSubjectError: false,
-      isSubmitDisabled: true,
-      messageError: '',
-      nameError: '',
-      subjectError: '',
-      success: false,
-    });
     const { data, errors } = validateContactData(
       {
         name: state.name,
@@ -59,17 +45,15 @@ export const useContactPageStore: UseContactPageStoreType = (dictionary, lang) =
 
     if (errors) {
       setState({
-        emailError: filteredError('email', errors)?.message,
-        isEmailError: filteredError('email', errors)?.message ? true : false,
-        isMessageError: filteredError('message', errors)?.message ? true : false,
-        isNameError: filteredError('name', errors)?.message ? true : false,
-        isSubjectError: filteredError('subject', errors)?.message ? true : false,
-        messageError: filteredError('message', errors)?.message,
-        nameError: filteredError('name', errors)?.message,
-        subjectError: filteredError('subject', errors)?.message,
+        emailError: filteredError(fields.email, errors)?.message,
+        messageError: filteredError(fields.message, errors)?.message,
+        nameError: filteredError(fields.name, errors)?.message,
+        subjectError: filteredError(fields.subject, errors)?.message,
       });
+
       return;
     }
+
     if (!errors && data) {
       emailjs
         .send(
@@ -79,7 +63,7 @@ export const useContactPageStore: UseContactPageStoreType = (dictionary, lang) =
           process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
         )
         .then(
-          function (response) {
+          (response) => {
             if (response.status === 200) {
               setState({
                 email: '',
@@ -91,7 +75,7 @@ export const useContactPageStore: UseContactPageStoreType = (dictionary, lang) =
               });
             }
           },
-          function (error) {
+          (error: { text: string }) => {
             setState({
               error: error.text,
               isSubmitDisabled: false,
@@ -109,31 +93,31 @@ export const useContactPageStore: UseContactPageStoreType = (dictionary, lang) =
 
   useEffect(() => {
     setState({
-      isNameError: false,
+      nameError: '',
       isSubmitDisabled: false,
     });
   }, [setState, state.name]);
 
   useEffect(() => {
     setState({
-      isEmailError: false,
+      emailError: '',
       isSubmitDisabled: false,
     });
   }, [setState, state.email]);
 
   useEffect(() => {
     setState({
-      isSubjectError: false,
+      subjectError: '',
       isSubmitDisabled: false,
     });
-  }, [setState, state.email]);
+  }, [setState, state.subject]);
 
   useEffect(() => {
     setState({
-      isMessageError: false,
+      messageError: '',
       isSubmitDisabled: false,
     });
-  }, [setState, state.email]);
+  }, [setState, state.message]);
 
   return {
     state,

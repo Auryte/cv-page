@@ -1,18 +1,23 @@
-import { Typography } from '@/uiKit/Typography/Typography';
-import { styles } from './BackgrounsTextBlock.styles';
 import { Grid } from '@/uiKit/Grid/Grid';
+import { Typography } from '@/uiKit/Typography/Typography';
 import { hasBlackBackground, hasGreyBackground } from '@/utils/wordsPositionCheck';
+
 import { BackgroundedTextComponent } from './BackgroundedTextBlock.types';
+import { styles } from './BackgrounsTextBlock.styles';
 
 export const BackgroundedTextBlock: BackgroundedTextComponent = (props) => {
   const { sx, words } = props;
+
   return (
     <Grid
       container
       item
       direction='row'
       md={4}
-      sx={{ ...styles.sectionWrapper, ...sx }}
+      sx={{
+        ...styles.sectionWrapper,
+        ...sx,
+      }}
     >
       {words.map((skill, index) => (
         <Typography

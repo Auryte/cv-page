@@ -1,11 +1,12 @@
 import { Grid } from '@/uiKit/Grid/Grid';
-import HeaderLogo from './components/HeaderLogo/HeaderLogo';
-import { HeaderTabBar } from './components/HeaderTabBar/HeaderTabBar';
-import { HeaderComponent } from './Header.types';
-import { HeaderMobileMenu } from './components/HeaderMobileMenu/HeaderMobileMenu';
-import { styles } from './Header.styles';
+
 import { HeaderIconsMenu } from './components/HeaderIconsMenu/HeaderIconsMenu';
+import HeaderLogo from './components/HeaderLogo/HeaderLogo';
+import { HeaderMobileMenu } from './components/HeaderMobileMenu/HeaderMobileMenu';
 import HeaderPhone from './components/HeaderPhone/HeaderPhone';
+import { HeaderTabBar } from './components/HeaderTabBar/HeaderTabBar';
+import { styles } from './Header.styles';
+import { HeaderComponent } from './Header.types';
 
 export const Header: HeaderComponent = (props) => {
   const { dictionary, defaultPage, pages } = props;
