@@ -1,0 +1,26 @@
+import { getDictionary, LANGUAGE } from '@/lib/i18n';
+import { Banner } from '@/components/Banner/Banner';
+
+export const metadata = {
+  description: 'Aureja Slance | Home',
+  title: 'Aureja Slance | Home',
+};
+
+export interface IHomePageProps {
+  params: {
+    lang: LANGUAGE;
+  };
+}
+
+async function HomePage(props: IHomePageProps) {
+  const { lang } = props.params;
+  const { home } = await getDictionary(lang);
+
+  return (
+    <main>
+      <Banner dictionary={home} />
+    </main>
+  );
+}
+
+export default HomePage;

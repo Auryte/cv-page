@@ -1,0 +1,164 @@
+{
+  "about": {
+    "download": "Atsisiųsk CV",
+    "linkButton": "Susisiekite",
+    "introduction": "Atsidavusi ir iniciatyvi programų kūrėja su tvirta pagrindine front-end technologijų ir Agile metodologijų žiniomis. Patyrusi bendradarbiaujant įvairiuose projektuose, taikant SCRUM praktikas, siekiant sukurti aukštos kokybės programas. Mokanti naudoti React, JavaScript ir Node.js. Trokštu prisidėti savo įgūdžiais ir patirtimi prie inovatyvių projektų.",
+    "mainFeatures": {
+      "chapter1": "Kaip asmuo, pasišventęs front-end programavimo sričiai, esu tobulinusi savo įgūdžius naudodama React ir kitas alternatyvas, siekdama sukurti funkcionalias ir vizualiai patrauklias interneto programas. Puikiai suprantu vienetų testavimo svarbą ir naudą, palaikant kodo kokybę bei patikimumą. Taip pat turiu gilias žinias „TypeScript“, ir gebu efektyviai dirbti su CSS bei HTML, siekdama sukurti sklandžią vartotojo patirtį."
+    },
+    "quote1": "Lanksčios",
+    "quote2": "Vizualiai",
+    "quote3": "patrauklios",
+    "quote4": "internetinės",
+    "quote5": "programos."
+  },
+  "contact": {
+    "nameInputLabel": "Vardas",
+    "emailInputLabel": "El. paštas",
+    "subjectInputLabel": "Tema",
+    "messagetInputLabel": "Žinutė",
+    "submit": "Siųsti",
+    "summaryArticle": "Visada pasiruošusi dirbti, laukiu tinkamo projekto. Nedvejodami susisiekite su manimi!",
+    "summaryTitle": "Kontaktinė informacija",
+    "nameErrorMessageMin": "Įveskite savo vardą.",
+    "nameErrorMessageMax": "Vardą turi sudaryti ne daugiau 30 simbolių.",
+    "nameErrorMessageAlph": "Vardą turi sudaryti tik raidės.",
+    "emailErrorMessage": "Neteisingas el. pašto adresas.",
+    "emailErrorMessageMin": "Įveskite savo el. paštą.",
+    "subjectErrorMessage": "Pavadinimą turi sudaryti mažiausiai 3 ir daugiausia 100 simbolių.",
+    "messageErrorMessage": "Žinutę turi sudaryti mažiausiai 5 ir daugiausia 250 simbolių.",
+    "popupTitle": "Ačiū!",
+    "popupMsg": "Jūsų žinutė sėkmingai išsiųsta.",
+    "popupConfirm": "Gerai",
+    "error": "Atsiprašome, Jūsų žinutė neišsisiuntė dėl šios klaidos: "
+  },
+  "errorPage": {
+    "error": "Klaidos pranešimas:",
+    "goHome": "Į pagrindinį puslapį",
+    "retry": "Atnaujinti",
+    "smthWrongMsg": "Įvyko klaida!"
+  },
+  "headerMenu": {
+    "home": "Pagrindinis",
+    "about": "Apie",
+    "contact": "Kontaktai",
+    "projects": "Projektai",
+    "resume": "CV"
+  },
+  "headings": {
+    "about": "Apie mane",
+    "resume": "Gyvenimo aprašymas",
+    "projects": "Projektai",
+    "contacts": "Kontaktai",
+    "developer": "Front-end Programuotoja"
+  },
+  "home": {
+    "heading": "Aurėja Šlančė",
+    "headingThree": "Sveiki, aš",
+    "headingTwo": "Front-end programuotoja"
+  },
+  "not-found": {
+    "heading": "404. Puslapis nerastas"
+  },
+  "projects": {
+    "interior": {
+      "linkButton": "Susipažinti su projektu",
+      "mainFeatures": {
+        "chapter1": "Aptakus ir jautrus dizainas suteikia galimybę mėgautis sklandžiu naršymu su „React“ valdoma sąsaja, užtikrinančia lengvą naršymą įvairiuose įrenginiuose.",
+        "chapter2": "Dinaminė galerija: įkvepiančių interjero projektų kolekcija – nuo gyvenamųjų erdvių iki komercinio dizaino.",
+        "chapter3": "Vartotojo sąsajos ir verslo logikos sukūrimas. Maršrutizavimas, formos, HTTP užklausos, validacijos.",
+        "chapter4": "Administratoriaus valdymas: administratorius gali lengvai pridėti, pašalinti arba modifikuoti projektus ir straipsnius patogiame administratoriaus skydelyje."
+      },
+      "summaryArticle": "Patogi žiniatinklio programa, kurioje pristatoma kuruojama interjero projektų galerija ir įžvalgūs straipsniai apie techninius interjero dizaino niuansus. Sukurta naudojant mobiliesiems pritaikytą dizainą, priekinė dalis atlikta su „React“, o užpakalinėje sistemoje naudojami „Node.js“, „Express“ ir „MongoDB“, kad būtų užtikrintas sklandus veikimas. Programoje yra intuityvus administratoriaus skydelis, leidžiantis prisijungusiems administratoriams be vargo valdyti projektus ir straipsnius pridedant, pašalinant arba keičiant turinį.",
+      "summaryTitle": "Interjero projektų puslapis"
+    },
+    "starwars": {
+      "linkButton": "Susipažinti su projektu",
+      "mainFeatures": {
+        "chapter1": "React: reaguojanti ir interaktyvi programos sąsaja.",
+        "chapter2": "SWAPI integracija: dinamiškai gaunami „Žvaigždžių karų“ filmų ir veikėjų duomenys.",
+        "chapter3": "Programa patenkina įvairius pageidavimus, naudodama dinamiškas temų parinktis."
+      },
+      "summaryArticle": "'Žvaigždžių karų' filmų programa, sukurta naudojant „React“ ir „Žvaigždžių karų API“ (SWAPI), siūlo minimalistinį „Žvaigždžių karų“ filmų sagos tyrinėjimą. Vartotojai gali matyti filmo detales ir veikėjų lentelę, visa tai pateikiama vartotojui draugiškoje interaktyvioje sąsajoje. Programėlė patenkina įvairius pageidavimus su perjungiamomis tamsia ir šviesia temomis, todėl „Žvaigždžių karų“ entuziastams užtikrina įtraukiančią patirtį.",
+      "summaryTitle": "'Žvaigždžių karų' filmų puslapis"
+    },
+    "weather": {
+      "linkButton": "Susipažinti su projektu",
+      "mainFeatures": {
+        "chapter1": "Intuityvus dizainas ir logika sklandžiai naudotojo patirčiai.",
+        "chapter2": "Įrenginio testavimas naudojant 'Jest' ir 'React Testing Library'.",
+        "chapter3": "Vartotojo sąsajos ir verslo logikos sukūrimas.",
+        "chapter4": "Maršrutų parinkimas, formos, HTTP užklausos, validacijos.",
+        "chapter5": "Foniniai vaizdai keičiasi atsižvelgiant į orą realiuoju laiku, suteikiant greitą momentinę nuotrauką.",
+        "chapter6": "Paieškos funkcionalumas miestuose visame pasaulyje su patogia naujausių paieškų skiltimi."
+      },
+      "summaryArticle": "Ši vieno puslapio programa (SPA) turi tinkintą vartotojo sąsają ir verslo logiką, pagal numatytuosius nustatymus pateikianti dabartinės vietos orus kartu su šiandienos orais ir savaitės prognozėmis. Sukūriau „Weather App“, naudodama „React“ ir „Foreca Weather API“, pademonstruodama savo įgūdžius kuriant front-end ir vartotojo sąsajos dizainą. Programėlės naudotojai gali tyrinėti valandines prognozes spustelėdami konkrečias dienas, o programėlėje siūlomos tamsios ir šviesios temos, kad atitiktų vartotojo pageidavimus. Miesto paieškos funkcija leidžia tikrinti orų prognozes miestuose visame pasaulyje ir patogiai matyti paskutinių 5 paieškų istoriją. Programos dinamiškas fonas keičiasi atsižvelgiant į dabartinį orą ir suteikia įtraukiančių įspūdžių. Jame yra puslapis atsiliepimams apie programą. Pažymėtina, kad programa sukurta be užpakalinės dalies, todėl duomenys  išsaugomi vietinėje saugykloje.",
+      "summaryTitle": "Orų programėlė"
+    }
+  },
+  "resume": {
+    "architect": "architektė",
+    "architectDescription": "Architektūrinis projektavimas ir techniniai gyvenamųjų ir viešų pastatų brėžiniai, interjero dizainas. Bendravimas su klientais, inžinieriais, statybininkais ir darbuotojais. Projektų autorinė ir techninė priežiūra, įmonės svetainė ir jos priežiūra",
+    "architectTools": "AutoCAD brėžiniai, 3dMax V-ray vizualizacijos, Adobe Photoshop, SketchUp",
+    "codeAcademy": "CODEACADEMY",
+    "education": "Išsilavinimas",
+    "engineer": "Programuotoja",
+    "experience": "Darbo Patirtis",
+    "faculty": "Statybos inžinerijos ir architektūros fakultetas | Magistras",
+    "foodProject": {
+      "title": "MAISTO UŽSAKYMO PROJEKTAS",
+      "introduction": "Aktyviai dalyvavau kuriant maisto užsakymo internetinę programą, pritaikytą korporatyviniams vartotojams. Ši dinamiška platforma palengvina sklandų maisto užsakymą, meniu pritaikymą, vartotojo virtuvės nuostatas ir dinaminį ataskaitų generavimą. Be to, ji turi API skirtą sklandžiam integravimui su kitomis įmonės programomis. Mano pagrindinis indėlis apėmė:",
+      "chapter1": "Perkėliau Figma dizainus į funkcinius UI komponentus, užtikrinant vizualiai patrauklią ir vartotojišką sąsają.",
+      "chapter2": "Kūriau efektyvius API maršrutus naudojant Next.js, užtikrinant sklandų ryšį tarp frontendo ir backend komponentų. Įdiegiau saugų ir optimizuotą duomenų mainų būdą, siekiant pagerinti bendrą programos veikimą.",
+      "chapter3": "Sukūriau Užsakymų puslapio struktūrą ir funkcionalumą. Įdiegiau funkcijas, kurios palengvino užsakymo procesą ir pagerino vartotojo patirtį. Tai reikalavo detalaus dėmesio ir orientacijos į sklandžius procesus.",
+      "chapter4": "Įdiegiau tvirtą testavimo strategiją, apimančią visą kodą, taikiau testavimo kombinaciją iš (e2e) ir vienetinių testų. Pasinaudojau Jest ir Playwright, užtikrinant, kad programa būtų patikima ir stabili."
+    },
+    "forexProject": {
+      "title": "FOREX BROKERIO PROJEKTAS",
+      "introduction": "Dirbdama projekte su užsienio valiutos (forex) brokeriu, prisidėjau prie prekybos ir kitų mokesčių struktūrų tobulinimo, kad palaikyčiau įmonės misiją užtikrinti sklandžią ir ekonomišką prieigą prie pasaulinių rinkų Australijoje ir visame pasaulyje.",
+      "chapter1": "Panaudojau savo „React“, „React-Redux“, „Redux-Saga“ ir „Redux-Form“ įgūdžius, kad sukurčiau dinamišką ir patogią sąsają. Tai pagerino bendrą vartotojų patirtį ir supaprastino prekybos veiklą.",
+      "chapter2": "Naudotos Node.js ir MongoDB back-end sistemoje, kad būtų užtikrintas efektyvus duomenų valdymas ir gavimas, prisidedant prie bendro sistemos našumo.",
+      "chapter3": "Sėkmingai integruotas „Firebase“ telefono autentifikavimas, naudojant „Google Identity Toolkit“ API ir „reCaptcha“ tikrintuvą. Šis diegimas suteikė patikimą SMS telefono numerio patvirtinimo paslaugą nurodytos šalies naudotojams.",
+      "chapter4": "Sumaniai įgyvendinau „Google“ prisijungimo ir prisiregistravimo procesus, žymiai pagerinant naudotojų prisijungimo į sistemą patirtį ir taip skatinant naudotojų įtraukimą.",
+      "chapter5": "Bendradarbiavau su mokėjimo sistemomis, įskaitant „Hyperwallet“ ir „DragonPay“ išmokėjimų sistemomis, užtikrinančiomis sklandžias ir efektyvias finansines operacijas klientams.",
+      "chapter6": "Susipažinau su Meta Trader platformomis, pagerinau supratimą apie įvairius prekybos įrankius ir strategijas, naudojamas rinkoje.",
+      "chapter7": "Įgalinau SWIFT kodo patvirtinimą, taip papildomai tobulinant finansinių operacijų saugumo lygį ir uždedant apribojimus tam tikrom šalims dėl pinigų išėmimo.",
+      "chapter8": "Glaudžiai bendradarbiavau su backend kūrimo komanda, naudodama MongoDB, prisidėdama prie įvairių paieškos ir filtravimo metodų skirtingoms lentelėms diegimo. Tai labai pagerino duomenų gavimo iš duomenų bazės efektyvumą."
+    },
+    "insuaranceProject": {
+      "title": "DRAUDIMO APLIKACIJOS PROJEKTAS",
+      "introduction": "Mokymų tikslas buvo išmokti dirbti komandoje naudojant SCRUM metodiką. Mokymų programa apėmė šiuos aspektus: Reikalavimų analizė, projekto padalijimas į istorijas, įvertinimas, Sprinto planavimas, tobulinimas, peržiūra, retrospektyvinės sesijos.",
+      "chapter1": "REST API’s kūrimas",
+      "chapter2": "Autentifikavimo ir prieigos teisių valdymas",
+      "chapter3": "Kodo peržiūra, pertvarkymas, klaidų taisymas"
+    },
+    "kaunas": "Kaunas, Lietuva",
+    "ktu": "Kauno Technologijų universitetas",
+    "learnMore": "Sužinokite daugiau",
+    "program": "Javascript, React, Node",
+    "skills": "Įgūdžiai",
+    "socialProject": {
+      "title": "SOCIALINIŲ MEDIJŲ APLIKACIJOS PROJEKTAS",
+      "introduction": "Mokymų tikslas buvo išmokti JS metodų ir geriausios praktikos, suprasti frameworkų mechanizmus, įtvirtinti frontend pagrindus. Mokymo projekto tikslas buvo sukurti socialinės žiniasklaidos programą su vanilla JS naudojant OOP, pabrėžiant vienos atsakomybės principą ir kodo pakartotinį naudojimą. Mokymo programa apėmė šiuos aspektus:",
+      "chapter1": "Programėlės vystymas",
+      "chapter2": "Validacija",
+      "chapter3": "Maršrutizavimas",
+      "chapter4": "Vanilla JS praktikos",
+      "chapter5": "Backend vystymas su MongoDB, Node.js"
+    },
+    "summaryArticle": "Į rezultatus orientuota front-end kūrėja, daug dėmesio skirianti React ir alternatyvioms sistemoms, kad sukurtų vizualiai patrauklias ir funkcionalias žiniatinklio programas. Atsižvelgdamas į kodo kokybę, pirmenybę teikiu vienetų tikrinimui dėl patikimumo. Išmanau „TypeScript“. Sklandžiai derinu CSS ir HTML, kad sukurčiau patrauklią vartotojo patirtį. Įrodyta sėkmingų projektų pristatymo laiku patirtis. TrokšU savo žiniomis prisidėti prie dinamiškų komandų, peržengiančių žiniatinklio kūrimo ribas.",
+    "summaryTitle": "Gyvenimo aprašymo santrauka",
+    "techSkills": "Techniniai įgūdžiai/ įrankiai ir technologijos: React, Redux, Redux-saga, Redux-form, Next.js, Typescript, MUI, React-Hook-Form, Formik, Yup, Jest, MSW, Node js, Express, JWT, Bcrypt, AJV, Joi, Swagger, JSDoc, Cloudinary ",
+    "tools": "Įrankiai, aplinka, kalbos ir technologijos:",
+    "vilnius": "Vilnius, Lietuva",
+    "weatherProject": {
+      "title": "ORŲ APLIKACIJOS PROJEKTAS",
+      "introduction": "Pagrindinis mokymų tikslas buvo išmokti React ir pasiruošti darbui realiuose projektuose. Projekto tikslas buvo sukurti „Orų programėlę“ naudojant „React“. Programa apėmė šiuos aspektus:",
+      "chapter1": "Vartotojo sąsajos ir verslo logikos sukūrimas.",
+      "chapter2": "Maršrutai, formos, HTTP užklausos, validacija",
+      "chapter3": "Kodo pertvarkymas, klaidų taisymas",
+      "chapter4": "Vienetų testavimas naudojant Jest ir React Testing Library",
+      "chapter5": "Versijos valdymas atliekamas Pull Requestais per GitHub naudojant Git"
+    }
+  }
+}

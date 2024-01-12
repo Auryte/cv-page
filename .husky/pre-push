@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+. "$(dirname -- "$0")/colors"
+
+hook_name="Husky pre-push hook"
+
+printf "\n%b[STARTED]%b %s\n" "$cg" "$co" "$hook_name"
+
+branch_name_pattern="^LV-[[:digit:]]{4,}(-[[:lower:]]{1,})*$"
+branch_name="$(git rev-parse --abbrev-ref HEAD)"
+
+if ! echo "$branch_name" | grep -E "$branch_name_pattern"; then
+  printf "%b[FAILED]%b %s:\n" "${cr}" "$co" "$hook_name"
+  printf "  - branch name: %b\"$branch_name\"%b\n" "${cr}" "$co"
+  printf "  - does not match the required pattern: %b<ticket-number>[-<branch-name>]%b\n" "${cg}" "$co"
+  printf "  - examples: %b\"LV-1234\", \"LV-1234-branch-name\"%b\n\n" "${cg}" "$co"
+
+  exit 1
+fi
+
+printf "%b[SUCCESS]%b %b\n\n" "$cg" "$co" "$hook_name"

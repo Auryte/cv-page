@@ -1,0 +1,30 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+. "$(dirname -- "$0")/colors"
+
+hook_name="Husky pre-commit hook"
+
+printf "\n%b[STARTED]%b %s\n" "$cg" "$co" "$hook_name"
+
+npm run format:check || {
+  printf "%b[FAILED]%b %s:\n" "$cr" "$co" "$hook_name"
+  printf "  - %bFormatter check failed.%b Run %bnpm run format:write%b %bto fix code style%b\n\n" "$cr" "$co" "$cg" "$co"
+
+  exit 1
+}
+
+npm run check-types || {
+  printf "%b[FAILED]%b %s:\n" "$cr" "$co" "$hook_name"
+  printf "  - %bTS type check failed%b\n\n" "$cr" "$co"
+
+  exit 1
+}
+
+npx lint-staged || {
+  printf "%b[FAILED]%b %s:\n" "$cr" "$co" "$hook_name"
+  printf "  - %bESLint failed%b\n\n" "$cr" "$co"
+
+  exit 1
+}
+
+printf "%b[SUCCESS]%b %s\n" "$cg" "$co" "$hook_name"

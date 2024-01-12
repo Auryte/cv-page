@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+#. "$(dirname -- "$0")/_/husky.sh"
+
+cg="\033[0;32m" # color green
+cr="\033[0;31m" # color red
+co="\033[0m"    # color off

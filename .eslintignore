@@ -1,0 +1,6 @@
+.husky
+.next
+.swc
+__tests__
+coverage
+node_modules

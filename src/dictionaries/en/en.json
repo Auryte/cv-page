@@ -1,0 +1,164 @@
+{
+  "about": {
+    "download": "Download CV",
+    "linkButton": "Get in touch",
+    "introduction": "Dedicated and proactive software developer with a strong foundation in frontend technologies and agile methodologies. Experienced in collaborative project environments, employing SCRUM practices to deliver high-quality applications. Adept at React, JavaScript, and Node.js. Eager to contribute skills and expertise to innovative projects.",
+    "mainFeatures": {
+      "chapter1": "As someone deeply committed to front-end development, I have honed my skills in utilizing React and its alternatives to build responsive and visually appealing web applications. I am well-versed in the benefits of unit testing, recognizing its importance in maintaining code quality and reliability. Additionally, I possess a solid understanding of TypeScript and am proficient in working with CSS and HTML to create seamless user experiences."
+    },
+    "quote1": "Responsive",
+    "quote2": "Visually",
+    "quote3": "appealing",
+    "quote4": "web",
+    "quote5": "applications."
+  },
+  "contact": {
+    "emailErrorMessage": "Enter valid email.",
+    "emailErrorMessageMin": "Enter your email.",
+    "emailInputLabel": "Email",
+    "error": "Sorry, Your message can't be sent because of this error: ",
+    "messageErrorMessage": "Message must contain at least 5 and at most 250 character(s).",
+    "messagetInputLabel": "Message",
+    "nameErrorMessageAlph": "String must contain only alphabets.",
+    "nameErrorMessageMax": "String must contain at most 30 character(s).",
+    "nameErrorMessageMin": "Enter your name.",
+    "nameInputLabel": "Name",
+    "popupConfirm": "OK",
+    "popupMsg": "Your message has been sent successfully.",
+    "popupTitle": "Thank You!",
+    "subjectErrorMessage": "Subject must contain at least 3 and at most 100 character(s).",
+    "subjectInputLabel": "Subject",
+    "submit": "Submit",
+    "summaryArticle": "Always available for work if the right project comes along, Feel free to contact me!",
+    "summaryTitle": "Contact Info"
+  },
+  "errorPage": {
+    "error": "Error message:",
+    "goHome": "Go to Home",
+    "retry": "Retry",
+    "smthWrongMsg": "Something went wrong!"
+  },
+  "headerMenu": {
+    "about": "About",
+    "contact": "Contact",
+    "home": "Home",
+    "projects": "Projects",
+    "resume": "Resume"
+  },
+  "headings": {
+    "about": "About me",
+    "resume": "Resume",
+    "projects": "Projects",
+    "contacts": "Contacts",
+    "developer": "Front-end Developer"
+  },
+  "home": {
+    "heading": "Aureja Slance",
+    "headingThree": "Hello, I'm",
+    "headingTwo": "Front-end developer"
+  },
+  "not-found": {
+    "heading": "404. Not found"
+  },
+  "projects": {
+    "interior": {
+      "linkButton": "Go To The Project",
+      "mainFeatures": {
+        "chapter1": "Sleek and Responsive Design: Enjoy a seamless browsing experience with our React-powered frontend, ensuring easy exploration across devices.",
+        "chapter2": "Dynamic Gallery: Explore a collection of inspiring interior projects, from residential spaces to commercial designs.",
+        "chapter3": "UI and business of SPA creation Routing, forms, HTTP requests, validation.",
+        "chapter4": "Admin Management: Admin can easily add, remove, or modify projects and articles through a user-friendly admin panel."
+      },
+      "summaryArticle": "A user-friendly web application showcasing a curated gallery of interior projects and insightful articles on the technical nuances of interior design. Crafted with a mobile-responsive design, the frontend is powered by React, while the backend utilizes Node.js, Express, and MongoDB for seamless performance. The application features an intuitive admin panel, allowing logged-in administrators to effortlessly manage projects and articles by adding, removing, or modifying content.",
+      "summaryTitle": "Interior projects page"
+    },
+    "starwars": {
+      "linkButton": "Go To The Project",
+      "mainFeatures": {
+        "chapter1": "React: Powering the app's responsive and interactive frontend.",
+        "chapter2": "SWAPI Integration: Dynamically fetching Star Wars movie and character data.",
+        "chapter3": "The app caters to various preferences with its dynamic theming options."
+      },
+      "summaryArticle": "The Star Wars Movies App, crafted with React and the Star Wars API (SWAPI), offers a minimalist yet captivating exploration of the Star Wars movie saga. Users can seamlessly navigate through movie details and a character table, all presented in a user-friendly responsive interface. The app caters to diverse preferences with its toggleable dark and light themes, ensuring an immersive experience for Star Wars enthusiasts.",
+      "summaryTitle": "Star Wars Films App"
+    },
+    "weather": {
+      "linkButton": "Go To The Project",
+      "mainFeatures": {
+        "chapter1": "Intuitive design and logic for a seamless user experience.",
+        "chapter2": "Unit testing using Jest and React Testing Library.",
+        "chapter3": "UI and business of SPA creation.",
+        "chapter4": "Routing, forms, HTTP requests, validation.",
+        "chapter5": "Background images change with real-time weather, providing a quick snapshot.",
+        "chapter6": "Search functionality for cities worldwide, with a convenient recent searches section."
+      },
+      "summaryArticle": "This Single Page Application (SPA) features custom UI and business logic, presenting current location weather by default, along with today's weather and a weekly forecast. I developed a Weather App using React and Foreca Weather API, showcasing my proficiency in front-end development and UI design. Users of the app can explore hourly forecasts by clicking on specific days, and the app offers both dark and light themes to cater to user preferences. The city search functionality allows weather checks for cities worldwide, with a convenient history of the last 5 searches. The app's dynamic backgrounds change based on current weather, providing an immersive experience. It includes dedicated pages for feedback and about the app. Notably, the app is designed without a backend, saving feedback data to local storage.",
+      "summaryTitle": "Weather App"
+    }
+  },
+  "resume": {
+    "architect": "architect",
+    "architectDescription": "Architectural design and technical drawings of residential and public buildings, interior design. Communication with clients, engineers, builders and workers. Projects supervision, company website, social network development and maintenance.",
+    "architectTools": "AutoCAD drawings, 3dMax V-ray renders, Adobe Photoshop, SketchUp",
+    "codeAcademy": "CODEACADEMY",
+    "education": "Education",
+    "engineer": "Engineer",
+    "experience": "Work Experience",
+    "faculty": "Faculty of Civil Engineering and Architecture | Master",
+    "foodProject": {
+      "title": "FOOD ORDERING PROJECT",
+      "introduction": "Food Ordering web application tailored for corporate users. This dynamic platform facilitates seamless food ordering, menu customization, kitchen preferences, and report generation. Moreover, it features an API for smooth integration with other company applications. My key Contributions:",
+      "chapter1": "Translated Figma designs into functional UI components, ensuring a visually appealing and user-friendly interface.",
+      "chapter2": "Developed efficient API routes in Next.js App Router, optimizing data communication between the front-end and back-end for a responsive user experience.",
+      "chapter3": "Crafted the structure and functionality of the Orders page. This involved meticulous attention to detail and a focus on delivering a streamlined ordering process.",
+      "chapter4": "Implemented a robust testing strategy, covering all code with a combination of end-to-end (e2e) and unit tests. Leveraged Jest and Playwright to ensure the reliability and stability of the application."
+    },
+    "forexProject": {
+      "title": "FOREX BROKER PROJECT",
+      "introduction": "Working in the project with a foreign exchange (forex) broker, I played a role in enhancing trading and nontrading fee structures to support the company's mission of providing seamless and cost-effective access to global markets in Australia and the rest of the world.",
+      "chapter1": "Leveraged my proficiency in React, React-Redux, Redux-Saga, and Redux-Form to create a dynamic and user-friendly frontend interface. This enhanced the overall user experience and streamlined trading activities.",
+      "chapter2": "Utilized Node.js and MongoDB on the backend to ensure efficient data management and retrieval, contributing to the overall system performance.",
+      "chapter3": "Successfully integrated Firebase Phone Authentication, utilizing the Google Identity Toolkit API and reCaptcha verifier. This implementation provided a reliable SMS phone number verification service for users in the specified country.",
+      "chapter4": "Skillfully implemented Google sign-in and signup processes, significantly enhancing the user onboarding experience and improving user engagement.",
+      "chapter5": "Collaborated with payment systems including Hyperwallet and DragonPay payouts systems, ensuring smooth and efficient financial transactions for clients.",
+      "chapter6": "Developed a deep familiarity with Meta Trader platforms, enhancing my understanding of various trading tools and strategies employed in the industry.",
+      "chapter7": "Enabled SWIFT code verification, adding an extra layer of security to financial transactions and enforcing withdrawal restrictions for specific countries.",
+      "chapter8": "Collaborated closely with the backend development team using MongoDB, contributing to the implementation of various search and filtering methods for different tables. This greatly improved the efficiency of data retrieval."
+    },
+    "insuaranceProject": {
+      "title": "INSUARANCE APP PROJECT",
+      "introduction": "The goal of the training was to learn how to work in a team using the SCRUM methodology. The training program covered the following aspects: Requirement analysis, dividing project into stories, estimating, Sprint planning, refinement, review, retrospective sessions",
+      "chapter1": "Creation of REST API’s",
+      "chapter2": "Managing Authentication and Access Rights",
+      "chapter3": "Code review, refactoring, bug fixing"
+    },
+    "kaunas": "Kaunas, Lithuania",
+    "ktu": "Kaunas University of Technology",
+    "learnMore": "Learn more",
+    "program": "Javascript, React, Node",
+    "skills": "Skills",
+    "socialProject": {
+      "title": "SOCIAL MEDIA APP PROJECT",
+      "introduction": "The goal of the training was to learn JS approaches and best practices, understand frameworks mechanisms, consolidate the basics of frontend. The goal of the training project was to build a Social Media App in vanilla JS using OOP with emphasis on Single Responsibility Principle and code reusability. The training program covered the following aspects:",
+      "chapter1": "Development of an application",
+      "chapter2": "Validation",
+      "chapter3": "Routing",
+      "chapter4": "Vanilla JS approaches",
+      "chapter5": "Backend development with MongoDB, Node.js"
+    },
+    "summaryArticle": "Results-driven front-end developer with a strong focus on React and alternative frameworks to create visually appealing and responsive web applications. Committed to code quality, I prioritize unit testing for reliability. Proficient in TypeScript, I seamlessly blend CSS and HTML to craft engaging user experiences. Proven track record of delivering successful projects on time. Eager to contribute expertise to dynamic teams pushing the boundaries of web development.",
+    "summaryTitle": "Professional Summary",
+    "techSkills": "Technical Skills/ Tools and  Technologies: React, Redux, Redux-saga, Redux-form, Next.js, Typescript, MUI, React-Hook-Form, Formik, Yup, Jest, MSW, Node js, Express, JWT, Bcrypt, AJV, Joi, Swagger, JSDoc, Cloudinary ",
+    "tools": "Tools, Environment, Languages and Technologies:",
+    "vilnius": "Vilnius, Lithuania",
+    "weatherProject": {
+      "title": "WEATHER APP PROJECT",
+      "introduction": "The main goal of the training was to learn React and get prepared for the work in real projects. The goal ofthe project was to build a Weather App in React. The program covered the following aspects:",
+      "chapter1": "UI and business of SPA creation",
+      "chapter2": "Routing, forms, HTTP requests, validation",
+      "chapter3": "Code refactoring, bug fixing",
+      "chapter4": "Unit testing using Jest and React Testing Library",
+      "chapter5": "Version control done by Pull Requests through GitHub using Git"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+. "$(dirname -- "$0")/colors"
+
+hook_name="Husky commit-msg hook"
+
+printf "\n%b[STARTED]%b %s\n" "$cg" "$co" "$hook_name"
+
+commit_message_pattern="^LV-[[:digit:]]{4,}( [[:alnum:][:punct:]]{1,})*$"
+commit_message="$(cat "$1")"
+
+if ! echo "$commit_message" | grep -E "$commit_message_pattern"; then
+  printf "%b[FAILED]%b %s:\n" "${cr}" "$co" "$hook_name"
+  printf "  - commit message: %b\"$commit_message\"%b\n" "${cr}" "$co"
+  printf "  - does not match the required pattern: %b<ticket-number>[ <commit-message>]%b\n" "${cg}" "$co"
+  printf "  - examples: %b\"LV-1234\", \"LV-1234 commit-message.\"%b\n\n" "${cg}" "$co"
+
+  exit 1
+fi
+
+printf "%b[SUCCESS]%b %b\n\n" "$cg" "$co" "$hook_name"
