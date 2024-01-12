@@ -16,9 +16,7 @@ const ResumePageLayout: RootLayoutComponentTypes = async (props) => {
       spacing={5}
       sx={{ paddingTop: '112px', paddingBottom: '96px' }}
     >
-      <Heading
-        heading={headings.resume}
-      />
+      <Heading heading={headings.resume} />
       {children}
     </Grid>
   );

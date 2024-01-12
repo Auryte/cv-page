@@ -2,7 +2,7 @@ import { Grid } from '@/uiKit/Grid/Grid';
 import { styles } from './Project.styles';
 import { BackgroundedTextBlock } from '@/components/BackgroundedTextBlock/BackgroundedTextBlock';
 import { Article } from '@/components/Article/Article';
-import { ArticleWithImage } from '@/components/ArticleWitthImage/ArticleWithImage';
+import { ArticleWithImage } from '@/components/ArticleWithImage/ArticleWithImage';
 import { ProjectComponent } from '../../types/Project.types';
 
 export const Project: ProjectComponent = (props) => {

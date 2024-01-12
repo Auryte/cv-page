@@ -1,7 +1,7 @@
 export const styles = {
   inputLabel: {
-    width: '100%',
-    marginY: '24px',
+    'width': '100%',
+    'marginY': '24px',
     '& .MuiOutlinedInput-root': {
       backgroundColor: 'primary.dark',
     },

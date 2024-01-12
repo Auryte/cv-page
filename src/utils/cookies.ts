@@ -12,9 +12,11 @@ export const setThemeCookie = (theme: string) => {
 export const getCookie = (name: string) => {
   const nameLenghtPlus = name.length + 1;
 
-  return document.cookie
-    .split(';')
-    .map((c) => c.trim())
-    .filter((cookie) => cookie.substring(0, nameLenghtPlus) === `${name}=`)
-    .map((cookie) => decodeURIComponent(cookie.substring(nameLenghtPlus)))[0] || null;
+  return (
+    document.cookie
+      .split(';')
+      .map((c) => c.trim())
+      .filter((cookie) => cookie.substring(0, nameLenghtPlus) === `${name}=`)
+      .map((cookie) => decodeURIComponent(cookie.substring(nameLenghtPlus)))[0] || null
+  );
 };

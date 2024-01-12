@@ -3,13 +3,14 @@
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-import { Dictionary, getDictionary, LANGUAGE } from '@/lib/i18n';
 import { ErrorContent } from '@/components/Error/Error';
+import { Dictionary, getDictionary, LANGUAGE } from '@/lib/i18n';
 
 interface ErrorProps {
   error: Error & { digest?: string };
   reset: () => void;
 }
+
 export default function HomePageError(props: ErrorProps) {
   const { error, reset } = props;
   const [dictionary, setDictionary] = useState<Dictionary['errorPage']>();
@@ -25,7 +26,9 @@ export default function HomePageError(props: ErrorProps) {
     void findDictionary(lang);
   }, [lang]);
 
-  if (!dictionary) return null;
+  if (!dictionary) {
+    return null;
+  }
 
   return (
     <ErrorContent
@@ -35,4 +38,3 @@ export default function HomePageError(props: ErrorProps) {
     />
   );
 }
-

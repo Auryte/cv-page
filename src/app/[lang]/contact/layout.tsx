@@ -16,9 +16,7 @@ const ContactPageLayout: RootLayoutComponentTypes = async (props) => {
       spacing={5}
       sx={{ paddingTop: '112px', paddingBottom: '96px' }}
     >
-      <Heading
-        heading={headings.contacts}
-      />
+      <Heading heading={headings.contacts} />
       {children}
     </Grid>
   );

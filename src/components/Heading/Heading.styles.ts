@@ -1,6 +1,6 @@
 export const secondHeading = (theme: string) => ({
-  paddingLeft: '72px', 
-  width: {md: '50%', xs: '100%'},
+  'paddingLeft': '72px',
+  'width': { md: '50%', xs: '100%' },
   'fontSize': '48px',
   'fontWeight': '500',
   'color': 'text.dark',

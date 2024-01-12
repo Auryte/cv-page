@@ -10,15 +10,15 @@ export const styles = {
     backgroundColor: 'inherit',
   },
   wrapper: {
-    display: { xs: 'none', md: 'flex' }, 
-    backgroundColor: 'inherit' 
+    display: { xs: 'none', md: 'flex' },
+    backgroundColor: 'inherit',
   },
   phoneWrapper: {
     display: { xs: 'none', lg: 'flex' },
-    backgroundColor: 'inherit' 
+    backgroundColor: 'inherit',
   },
   mobileWrapper: {
-    display: { xs: 'flex', md: 'none' }, 
-    backgroundColor: 'inherit' 
-  }
+    display: { xs: 'flex', md: 'none' },
+    backgroundColor: 'inherit',
+  },
 };

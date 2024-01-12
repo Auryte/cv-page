@@ -32,12 +32,12 @@ export type Dictionary = {
     summaryArticle: string;
     summaryTitle: string;
   };
-  "errorPage": {
+  'errorPage': {
     error: string;
     goHome: string;
     retry: string;
-    smthWrongMsg: string; 
-  },
+    smthWrongMsg: string;
+  };
   'headerMenu': {
     about: string;
     contact: string;

@@ -1,9 +1,18 @@
 export const styles = {
   sectionWrapper: {
-    marginX: {md: 'auto', xs: '16px'},
-    width: {md: '738px', xs: 'calc(100% - 32px)'},
+    marginX: {
+      md: 'auto',
+      xs: '16px',
+    },
+    width: {
+      md: '738px',
+      xs: 'calc(100% - 32px)',
+    },
     marginTop: '72px',
-    paddingRight: {md: 0, xs: '16px'}
+    paddingRight: {
+      md: 0,
+      xs: '16px',
+    },
   },
   introduction: {
     color: 'text.main',
@@ -17,7 +26,6 @@ export const styles = {
     width: '100%',
     color: 'text.main',
     marginTop: '48px',
-
   },
   quoteGrey: {
     backgroundColor: 'primary.dark',
@@ -27,7 +35,10 @@ export const styles = {
     display: 'inline',
     paddingBottom: '8px',
     fontWeight: 100,
-    fontSize: {xs: '32px', md: "56px"}
+    fontSize: {
+      xs: '32px',
+      md: '56px',
+    },
   },
   quoteBlack: {
     display: 'inline',
@@ -36,12 +47,18 @@ export const styles = {
     color: 'common.light',
     paddingBottom: '8px',
     fontWeight: 100,
-    fontSize: {xs: '32px', md: "56px"}
+    fontSize: {
+      xs: '32px',
+      md: '56px',
+    },
   },
   qouteRegular: {
     display: 'inline',
     fontWeight: 100,
-    fontSize: {xs: '32px', md: "56px"}
+    fontSize: {
+      xs: '32px',
+      md: '56px',
+    },
   },
   button: {
     marginTop: '64px',

@@ -1,12 +1,15 @@
+import Link from 'next/link';
+
+import { AboutContentComponent } from './AboutContent.types';
+import { ArticleWithImage } from '@/components/ArticleWithImage/ArticleWithImage';
+
 import { Box } from '@/uiKit/Box/Box';
-import { Typography } from '@/uiKit/Typography/Typography';
-import { Grid } from '@/uiKit/Grid/Grid';
 import { Button } from '@/uiKit/Button/Button';
 import { getAboutImage, getCV } from '@/utils/getImages';
-import Link from 'next/link';
+import { Grid } from '@/uiKit/Grid/Grid';
+
 import { styles } from './AboutContent.styles';
-import { ArticleWithImage } from '@/components/ArticleWitthImage/ArticleWithImage';
-import { AboutContentComponent } from './AboutContent.types';
+import { Typography } from '@/uiKit/Typography/Typography';
 
 export const AboutContent: AboutContentComponent = (props) => {
   const { dictionary, lang } = props;
@@ -93,7 +96,12 @@ export const AboutContent: AboutContentComponent = (props) => {
         image={getAboutImage}
         link={`${process.env.NEXT_PUBLIC_URL}/${lang}/contact`}
         chapters={[dictionary.mainFeatures.chapter1]}
-        sxTypo={{ width: {md: '70%', xs: '100%'} }}
+        sxTypo={{
+          width: {
+            md: '70%',
+            xs: '100%',
+          },
+        }}
       />
     </>
   );

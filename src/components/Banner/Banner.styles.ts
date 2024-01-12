@@ -3,7 +3,7 @@ export const styles = {
     height: 'calc(100vh - 96px)',
     backgroundColor: 'inherit',
     color: 'text.main',
-    width: '100%'
+    width: '100%',
   },
   'mainHeading': {
     'fontSize': '120px',
@@ -19,7 +19,7 @@ export const styles = {
     'paddingLeft': '24px',
     '&:after': {
       width: '120%',
-      left: {md:'64px', xs: 0},
+      left: { md: '64px', xs: 0 },
     },
   },
   'headingThree': {

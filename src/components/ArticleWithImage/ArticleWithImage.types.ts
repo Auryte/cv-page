@@ -3,7 +3,7 @@ import { SxProps, Theme } from '@mui/material';
 import { ReactNode } from 'react';
 
 export interface ArticleWithImageProps {
-    dictionary:
+  dictionary:
     | Dictionary['projects']['interior']
     | Dictionary['projects']['weather']
     | Dictionary['projects']['starwars']

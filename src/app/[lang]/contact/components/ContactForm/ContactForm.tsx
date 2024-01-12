@@ -1,13 +1,16 @@
 'use client';
 
+import { ChangeEvent, FormEvent, useCallback } from 'react';
+
+import { PopupAlert } from '@/components/PopupAlert/PopupAlert';
+
+import { Button } from '@/uiKit/Button/Button';
 import { Grid } from '@/uiKit/Grid/Grid';
 import { TextField } from '@/uiKit/TextField/TextField';
-import { styles } from './ContactForm.styles';
-import { Button } from '@/uiKit/Button/Button';
-import { ChangeEvent, FormEvent, useCallback } from 'react';
-import { ContactFormComponent } from '../../types/ContactPage.types';
 import { Typography } from '@/uiKit/Typography/Typography';
-import { PopupAlert } from '@/components/PopupAlert/PopupAlert';
+
+import { ContactFormComponent } from '../../types/ContactPage.types';
+import { styles } from './ContactForm.styles';
 
 export const ContactForm: ContactFormComponent = (props) => {
   const {
@@ -55,10 +58,14 @@ export const ContactForm: ContactFormComponent = (props) => {
     },
     [submit],
   );
+
   return (
     <form
       onSubmit={handleSubmit}
-      style={{ width: '100%', paddingBottom: '48px' }}
+      style={{
+        width: '100%',
+        paddingBottom: '48px',
+      }}
     >
       <Grid
         alignSelf='top'
@@ -111,8 +118,14 @@ export const ContactForm: ContactFormComponent = (props) => {
           value={message}
           variant='outlined'
         />
-        {error ? <Typography sx={{color: 'error.main'}}>{`${dictionary.error}"${error}"`}</Typography>: null}
-        {success ? <PopupAlert dictionary={dictionary} onClose={onClose} isOpen={success}/>: null}
+        {error ? <Typography sx={{ color: 'error.main' }}>{`${dictionary.error}"${error}"`}</Typography> : null}
+        {success ? (
+          <PopupAlert
+            dictionary={dictionary}
+            onClose={onClose}
+            isOpen={success}
+          />
+        ) : null}
         <Button
           color='secondary'
           disabled={isSubmitDisabled}

@@ -6,7 +6,6 @@ import IconSent from '@/public/iconsSent.png';
 import { Grid } from '@/uiKit/Grid/Grid';
 import { PopupAlertComponent } from './PopupAlert.types';
 
-
 export const PopupAlert: PopupAlertComponent = (props) => {
   const { isOpen, dictionary, onClose } = props;
   return (

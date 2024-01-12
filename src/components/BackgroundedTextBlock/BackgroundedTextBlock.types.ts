@@ -6,6 +6,4 @@ export interface BackgroundedTextBlockProps {
   words: string[];
 }
 
-export type BackgroundedTextComponent = (
-  props: BackgroundedTextBlockProps,
-) => ReactNode;
+export type BackgroundedTextComponent = (props: BackgroundedTextBlockProps) => ReactNode;

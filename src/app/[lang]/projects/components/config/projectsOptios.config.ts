@@ -3,7 +3,6 @@ import { Dictionary } from '@/lib/i18n';
 import { getInteriorProjectImage, getStarWarsImage, getWeatherAppImage } from '@/utils/getImages';
 import { ProjectOptionsProps } from '../../types/Project.types';
 
-
 export const projectOptions = (dictionary: Dictionary['projects']): ProjectOptionsProps[] => [
   {
     id: 'weather',

@@ -16,9 +16,7 @@ const AboutPageLayout: RootLayoutComponentTypes = async (props) => {
       spacing={5}
       sx={{ marginTop: '72px', paddingBottom: '96px' }}
     >
-      <Heading
-        heading={headings.about}
-      />
+      <Heading heading={headings.about} />
       {children}
     </Grid>
   );

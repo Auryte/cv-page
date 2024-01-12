@@ -2,7 +2,7 @@ import { Dictionary } from '@/lib/i18n';
 import { ReactNode } from 'react';
 
 export interface ArticleProps {
-    dictionary:
+  dictionary:
     | Dictionary['resume']
     | Dictionary['projects']['interior']
     | Dictionary['projects']['weather']

@@ -1,14 +1,18 @@
 'use client';
 
-import { Article } from '@/components/Article/Article';
-import { Grid } from '@/uiKit/Grid/Grid';
-import { ContactForm } from '../ContactForm/ContactForm';
-import { Typography } from '@/uiKit/Typography/Typography';
 import Link from 'next/link';
+
+import { Grid } from '@/uiKit/Grid/Grid';
+import { Typography } from '@/uiKit/Typography/Typography';
 import { Icon } from '@/uiKit/Icon/Icon';
+
+import { Article } from '@/components/Article/Article';
+import { ContactForm } from '../ContactForm/ContactForm';
 import { useContactPageStore } from '../../hooks/useContactPageStore';
 import { linkGit, linkLinkedin } from '@/constants';
+
 import { ContactFormContainerComponent } from '../../types/ContactPage.types';
+import { styles } from './ContactFormContainer.styles';
 
 export const ContactFormContainer: ContactFormContainerComponent = (props) => {
   const { dictionary, lang } = props;
@@ -30,17 +34,18 @@ export const ContactFormContainer: ContactFormContainerComponent = (props) => {
     subjectError,
     success,
   } = state;
+
   return (
     <Grid
       container
       item
       direction='column'
-      sx={{ marginLeft:{ md: '250px', xs: 'auto'}, marginRight: {xs: 'auto'}, width: {md: '738px', xs: '90%'} }}
+      sx={styles.wrapper}
     >
       <Article
         dictionary={dictionary}
         sxTitle={{ fontSize: '32px' }}
-        sxWrapper={{ width: '100%', marginLeft: 0, marginBottom: '24px' }}
+        sxWrapper={styles.article}
       />
       <Grid
         container
@@ -66,7 +71,7 @@ export const ContactFormContainer: ContactFormContainerComponent = (props) => {
             <Icon
               name='github'
               fontSize='large'
-              sx={{ color: 'text.main', margin: '16px 16px 16px 0' }}
+              sx={styles.icon}
             />
           </Link>
           <Link
@@ -76,7 +81,7 @@ export const ContactFormContainer: ContactFormContainerComponent = (props) => {
             <Icon
               name='linkedin'
               fontSize='large'
-              sx={{ color: 'text.main', margin: '16px 16px 16px 0' }}
+              sx={styles.icon}
             />
           </Link>
         </Grid>

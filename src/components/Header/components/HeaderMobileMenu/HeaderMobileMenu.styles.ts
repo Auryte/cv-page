@@ -4,7 +4,7 @@ export const styles = {
     'marginTop': '14px',
     '& .MuiPaper-root': {
       minWidth: '100%',
-      backgroundColor: 'primary.main', 
+      backgroundColor: 'primary.main',
     },
     'ul': {
       padding: 0,
@@ -17,13 +17,13 @@ export const styles = {
     'textAlign': 'center',
     'paddingTop': '18px',
     '&:hover': {
-      backgroundColor: 'primary.dark', 
+      backgroundColor: 'primary.dark',
     },
   },
   locationMenuItem: {
     'backgroundColor': 'secondary.main',
     '&:hover': {
-      backgroundColor: 'secondary.main', 
+      backgroundColor: 'secondary.main',
     },
   },
 };

@@ -4,4 +4,4 @@ export const THEME_NAME = {
 };
 
 export const linkGit = 'https://github.com/Auryte';
-export const linkLinkedin = 'https://www.linkedin.com/in/aureja-slance/'
+export const linkLinkedin = 'https://www.linkedin.com/in/aureja-slance/';

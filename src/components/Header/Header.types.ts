@@ -2,14 +2,13 @@ import { Dictionary } from '@/lib/i18n';
 import { HeaderConfigTypes } from './config/headerOptions.config';
 import { FC } from 'react';
 
-
 export type HeaderTypes = {
   dictionary: Dictionary['headerMenu'];
   defaultPage?: string;
   pages: HeaderConfigTypes[];
 };
 
-export type HeaderComponent = FC<HeaderTypes>
+export type HeaderComponent = FC<HeaderTypes>;
 
 export type HeaderTabBarTypes = {
   defaultPage?: string;
@@ -17,4 +16,4 @@ export type HeaderTabBarTypes = {
   pages?: HeaderConfigTypes[];
 };
 
-export type HeaderTabBarComponent = FC<HeaderTabBarTypes>
+export type HeaderTabBarComponent = FC<HeaderTabBarTypes>;
